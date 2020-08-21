@@ -1,0 +1,410 @@
+/* ------------------Designed by collin grasley - 2006
+submitted to the public domain - - no link back required, but if ya do use it let me know!
+collingrasley@gmail.com ---------------------------*/
+
+
+/*
+
+------------------------------------------------------
+template number 02
+------------------------------------------------------
+
+*/
+
+/* the style council */
+
+body {
+	margin: 0 auto;
+	color: #4D4D4D;
+	font-family: Tahoma, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	line-height: 1.8em;
+	text-align: left;
+	background: #868c9c;
+	}
+	
+	a {
+	color: #1c6ea8;
+	}
+	
+	a:hover {
+	color: #2699eb;
+	}
+	
+	.column {
+		float: left;
+		width: 30%;
+		padding: 10px;
+	}
+	.column2 {
+		float: left;
+		width: 60%;
+		padding: 10px;
+	}
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	  }
+
+	form{
+		width: 430px;
+		margin:0 auto;
+		padding: 5px;
+	}
+	
+	#content h1{
+	font:30px Trebuchet MS;
+	color: #1c6ea8;
+	margin: 15px 0 15px 0;
+	padding-left: 15px; 
+	}
+	
+	h2 {
+	font:22px Trebuchet MS;
+	color: #1c6ea8;
+	margin: 15px;
+	}
+	
+	h3 {
+	font:20px Trebuchet MS;
+	color: #1c6ea8;
+	margin: 15px;
+	}
+	
+	p {
+	margin: 5px 15px 5px 15px;
+	font-size: 16px;
+	color: #000000;
+	}
+	
+	.source{
+		font-size: 16px;
+	}
+
+
+	input {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+	  
+		border-radius: 50%;
+		width: 16px;
+		height: 16px;
+	  
+		border: 2px solid #999;
+		transition: 0.2s all linear;
+		margin-right: 5px;
+	  
+		position: relative;
+		top: 4px;
+	  }
+	  
+	  input:checked {
+		border: 6px solid #1c6ea8;
+	  }
+	  
+
+	label {
+		font:14px Trebuchet MS;
+	color: black;
+	}
+	
+	blockquote p {
+	font:160% Georgia;
+	color:#aaa;
+	padding:5px;
+	line-height:25px;
+	}
+	
+	.highlight {
+	color: #99cc00;
+	font-weight:bold;
+	}
+	/* content stuff */
+	
+	#container {
+	width: 1200px;
+	text-align: left;
+	margin: 0px auto 0 auto;
+	background: #e6e6e6;
+	padding: 0 !important;
+	line-height: 1.8em;
+	border-left: 10px solid #000;
+	border-right: 10px solid #000;
+	
+	}
+	
+	#header {
+	height: 200px;
+	background: url(newBanner.png) no-repeat;
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+	}
+	
+	#header h1 {
+	text-align: center;
+	color: #ffffff;
+	font-size:33px;
+	margin: 25px 0;
+	background: none;
+	font-weight:bold;
+	
+	}
+	#header p{
+		text-align: center;
+		color: #ffffff;
+		font: 17px Trebuchet MS;
+		margin: 10px 25px 10px 10px;
+	}
+	
+	#content {
+	width: 1170px; 
+	margin: 0 auto;
+	background:#f2f2f2;
+	color:#787878;
+	float: center;
+	padding: 0;
+	font-family: Tahoma, Geneva, Arial, Helvetica, sans-serif;
+	
+	}
+	
+	#sidebar {
+	float: right;
+	width: 254px;
+	margin: 10px 10px 0 0;
+	padding: 0;
+	background:#f2f2f2;
+	color: #787878;
+	border:1px dotted #888; 
+	
+	}
+	
+	/* Side bar thumbs  */
+	
+	.thumbs img{
+	position:relative;
+	padding:1px;
+	margin:2px 3px 3px 2px;
+	border:2px solid #aaa;
+	background-color:inherit;
+	
+	}
+	.thumbs img:hover{
+	border:2px solid #2699eb;
+	}
+	
+	/* navigation!!!!!! */
+	
+	#nav-top {
+	float: right;
+	margin: 5px 15px 0 0;
+	background:inherit;
+	}
+	
+	#nav-top ul {
+	margin: 0;
+	padding: 2px;
+	background:inherit;
+	}
+	
+	#nav-top li {
+	display: inline;
+	padding: 4px;
+	}
+	
+	#nav-top a, #nav-top a:visited {
+	color: #000;
+	font-weight:bold;
+	text-decoration: none;
+	margin: 4px;
+	}
+	
+	#nav-top a:hover, #nav-top a:visited:hover {
+	color: #aaa;
+	}
+	
+	/* main navigation */
+	
+	#mainnav {
+	
+	margin: 2px 16px 2px 11px;
+	min-height: 30px;
+	background:inherit;
+	}
+	
+	#mainnav ul {
+	height: 100%;
+	margin: 0;
+	padding: 0 0 0 10px;
+	}
+	
+	#mainnav li {
+	list-style-type: none;
+	float: left;
+	width: auto;
+	
+	}
+	
+	#mainnav a:link, #mainnav a:visited {
+	display: block;
+	color: #1c6ea8;
+	text-transform:uppercase;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 1px 10px 2px 12px;
+	background:inherit;
+	border-top: 2px solid #1c6ea8;
+	}
+	
+	#mainnav a:hover, #mainnav a:visited:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: 1px 10px 2px 12px;
+	border-bottom: 2px solid #2699eb;
+	background:#212121;
+	}
+	
+	
+	
+	/*sub main navigation */
+	
+	#mainnavsub {
+	clear: both;
+	}
+	
+	#mainnavsub ul {
+	margin: 0;
+	padding: 0 10px 0 10px;
+	}
+	
+	#mainnavsub li {
+	list-style-type: none;
+	float: right;
+	margin: 4px 16px 0 2px;
+	padding-left: 8px;
+	}
+	
+	#mainnavsub li a {
+	font-size:10px;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-decoration: none;
+	color:#aaa;
+	}
+	#mainnavsub li a:hover {
+	text-decoration: none;
+	color:#fff;
+	}
+	
+	/*right nav */
+	
+	#nav-right ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+	
+	#nav-right {
+	margin: 10px;
+	}
+	
+	#nav-right li {
+	display:block;
+	padding:0;
+	margin: 2px 0 2px 0px;
+	border-bottom: 1px dotted #888; 
+	}
+	#nav-right li a {
+	display:block;
+	padding: 1px 1px 1px 6px;
+	text-decoration: none;
+	background:inherit;
+	color: #aaa;
+	}
+	
+	#nav-right li a:hover{
+	background:#212121;
+	color: #fff;
+	}
+	
+	/* footer */
+	#footer-contents {
+	clear: both;
+	text-align: right;
+	background:inherit;
+	margin: 0;
+	padding: 0px 0 0px 0;
+	border-top:1px dotted #aaa;
+	}
+	
+		
+	#footer-copy {
+	padding: 5px;
+	background:inherit;
+	margin: 4px 16px 4px 10px!important;
+	color: #000000;
+	}
+	
+	#footer-copy a,#footer-copy a:visited {
+	color: #1c6ea8;
+	}
+	
+	#footer-copy a:hover,#footer-copy a:visited:hover {
+	color: #aaa;
+	}
+	
+	#footer-links{
+	font-size: 10px;
+	padding: 0;
+	margin: 10px 16px !important;
+	}
+
+
+	.button {
+		padding: 16px 16px;
+		font-size: 16px;
+		margin: 0 auto;
+		transition-duration: 0.2s;
+		cursor: pointer;
+		text-align: center;
+		color: black; 
+		float: center;
+	}
+	  .button:hover {
+		background-color: #1c6ea8;
+		color: white;
+	  }
+
+	  .submit{
+		  margin: 0 auto;
+	  }
+
+	  .selectionHeader {
+		  font-size: 18px;
+	  }
+
+	  select {
+		  font-size: 14px;
+	  }
+
+div.tooltip {	
+    position: absolute;			
+    text-align: center;								
+    padding: 10px;				
+    font: 12px sans-serif;		
+    background: black;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+
+.grid line {
+  stroke: lightgrey;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+}
+
+.grid path {
+  stroke-width: 0;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<style>
+  body {
+      font: 15px sans-serif;
+  }
+
+  .axis path,
+  .axis line {
+      fill: none;
+      stroke: #000;
+      shape-rendering: crispEdges;
+  }
+
+  .dot {
+      stroke: none;
+  }
+  .tooltip {
+      position: absolute;
+      font-size: 14px;
+      width:  auto;
+      height: auto;
+      pointer-events: none;
+      background-color: white;
+  }
+  .title {
+	font-size: 24px;
+  }
+   </style>
+</head>
+
+
+
+
+<!-- Create a div where the graph will take place -->
+<body>
+  <div class="title" id="tf"></div>
+  <div id="title">Relative Rank P-value</div><br>
+  <div id="my_dataviz"></div>
+</body>
+
+
+
+
+
+<script>
+  file = localStorage.getItem("cancer_expressionType").concat("_bart.csv");
+  dataLink = "https://raw.githubusercontent.com/zvt3fn/BART_results_data/master/".concat(file);
+  //dataLink = "https://raw.githubusercontent.com/zvt3fn/BART_results_data/master/BLCA_down_bart.csv";
+  document.getElementById("tf").innerHTML = localStorage.getItem("tf_of_choice") + " Plot";
+// set the dimensions and margins of the graph
+var margin = {top: 10, right: 30, bottom: 30, left: 60},
+    width = 460 - margin.left - margin.right,
+    height = 400 - margin.top - margin.bottom;
+
+// append the svg object to the body of the page
+var svg = d3.select("#my_dataviz")
+  .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")");
+
+//Read the data
+d3.csv(dataLink, function(data) {
+
+  // Add X axis
+  var x = d3.scaleLinear()
+    .domain([0, 918])
+    .range([ 0, width ]);
+  svg.append("g")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(x).tickValues([1,918]));
+
+  // Add Y axis
+  var y = d3.scaleLinear()
+    .domain([0, d3.max(data, function(d) { return d.logPvalue; }) + 3 ])
+    .range([ height, 0]);
+  svg.append("g")
+    .call(d3.axisLeft(y).ticks(4));
+
+  var tooltip = d3.select("#my_dataviz").append("div")
+                  .attr("class", "tooltip")
+                  .style("opacity", 0);
+
+
+  var tipMouseover = function(d) {
+    var html = d.TF;
+    tooltip.html(html)
+                      .style("left", (d3.event.pageX + 12) + "px")
+                      .style("top", (d3.event.pageY - 23) + "px")
+                      .transition()
+                      .duration(100) // ms
+                      .style("opacity", .9) // started as 0!
+  }
+  var tipMouseout = function(d) {
+                    tooltip.transition()
+                            .duration(500) // ms
+                            .style("opacity", 0); // don't care about position!
+              };
+
+  svg.append("text")
+  .attr("transform",
+                "translate(" + ((width - margin.right + margin.left)/2) + " ," +
+                              (height + 30) + ")")
+          .style("text-anchor", "middle")
+          .text("TF Rank");
+  svg.append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("y", -40)
+            .attr("x",0 - ((height - margin.bottom + margin.top) / 2))
+            .attr("dy", "1em")
+            .style("text-anchor", "middle")
+            .text("-log10 (p)");
+  // Add dots
+  svg.append('g')
+    .selectAll("dot")
+    .data(data)
+    .enter()
+    .append("circle")
+      .attr("cx", function (d) { return x(d.ID); } )
+      .attr("cy", function (d) { return y(d.logPvalue); } )
+      .attr("r", 3)
+      .style("fill", "#6b685e")
+      .on("mouseover", tipMouseover)
+      .on("mouseout", tipMouseout)
+
+
+  svg.append('g')
+    .selectAll("dot")
+    .data(data)
+    .enter()
+    .append("circle")
+      .attr("cx", function (d) { if(d.TF == localStorage.getItem("tf_of_choice")){
+          return x(d.ID);
+        } else {
+        return 3000;
+       }; } )
+      .attr("cy", function (d) { return y(d.logPvalue); } )
+      .attr("r", 6)
+      .style("fill", "#e31041")
+      .on("mouseover", tipMouseover)
+      .on("mouseout", tipMouseout)
+
+})
+
+</script>
