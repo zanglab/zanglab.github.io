@@ -1,0 +1,583 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="default.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="ism/css/my-slider.css"/>
+<script src="ism/js/ism-2.2.min.js"></script>
+<script language="javascript" type="text/javascript">
+function update_modtime() {
+  var x = new Date(document.lastModified);
+  document.getElementById("last_mod").innerHTML="Last modified: "+x;
+}
+</script>
+<style>
+body {margin:0;}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 4px 20px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+.column {
+    float: left;
+}
+.left {
+  width: 16%;
+}
+.right {
+  width: 84%;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+<title>Chongzhi Zang Lab</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+<body bgcolor="white" onload="update_modtime();">
+<div style="width: 900px; margin: auto;">
+<img align="left" width="170" src="UVA-med-3.jpg">
+<img align="right" width="150" src="cphg_logo.jpg">
+<h2 style="font-size: 28pt" align="center"><a href="http://faculty.virginia.edu/zanglab" style="text-decoration:none;"><font color="#002F6C">Chongzhi Zang Lab&nbsp;&nbsp;</font></a></h2>
+
+<ul class="topnav" id="myTopnav">
+  <li><a class="active" href="index.htm">Home</a></li>
+  <li><a href="people.htm">People</a></li>
+  <li><a href="research.htm">Research</a></li>
+  <li><a href="publication.htm">Publications</a></li>
+  <li><a href="software.htm">Software</a></li>
+  <li><a href="teaching.htm">Teaching</a></li>
+  <li><a href="position.htm">Positions</a></li>
+  <li><a href="contact.htm">Contact</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+  </li>
+</ul>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+<div class="ism-slider" data-transition_type="fade" data-play_type="loop" id="home-slider">
+  <ol>
+    <li>
+      <img src="ism/image/slides/_u/1488566891987_67648.jpg">
+    </li>
+    <li>
+      <img src="ism/image/slides/_u/20191101_3.jpg">
+    </li>
+    <li>
+      <img src="ism/image/slides/_u/1488567032192_666768.jpg">
+    </li>
+    <li>
+      <img src="ism/image/slides/_u/1488736436612_647904.png">
+    </li>
+  </ol>
+</div>
+
+<h3><font color="#002F6C">Welcome</font></h3>
+<p>Welcome to <a href="http://faculty.virginia.edu/zang" target="_blank">Dr. Chongzhi Zang</a>'s Lab for Computational Biology at the <a href="http://www.virginia.edu" target="_blank">University of Virginia</a>. We are located in the Medical Center's <a href="http://www.virginia.edu/webmap/popPages/130-westcomplex.html" target="_blank">West Complex</a> (6th Floor), as a part of the <a href="https://med.virginia.edu/cphg/" target="_blank">Center for Public Health Genomics</a>.
+</p>
+<p>The Zang lab is recruiting motivated students and scholars to work on various topics in computational biology in a collaborative research team. Postdocs, graduate and undergraduate students are all welcome. Please visit <a href="position.htm">Positions</a> page for details.<br>
+</p>
+<br>
+<p align="center">
+<iframe width="800" height="450" src="https://www.youtube.com/embed/PARyFHGvdho" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</p>
+<br>
+<br>
+<h3><font color="#002F6C">Lab News</font></h3>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">August 2020</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>
+		Zhenjia's paper on cancer CTCF is accepted to Genome Biology!
+		</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">July 2020</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>
+		Zack Thomas presents a poster at ISMB 2020 virtual meeting. Way to go!
+		<br><br>
+		Dr. Zhenjia Wang receives a Trainee Support Grant from UVA Cancer Center. Congratulations Zhenjia!
+		<br><br>
+		The lab welcomes BIMS rotation student Audrey Putelo!
+		</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">June 2020</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>
+		Chongzhi co-chairs a <a href="https://www.abstractsonline.com/pp8/#!/9045/session/647"  target="_blank">Minisymposium on Transcriptional Gene Regulation in Cancer</a> at the American Association for Cancer Research (AACR) Virtual Annual Meeting 2020.
+		</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">May 2020</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>
+		The lab receives an NIH administrative supplement to the R35 award to support Zack Thomas's undergraduate summer research. Way to go Zack!
+		<br><br>
+		Congratulations to the graduating Class of 2020!
+		<br><br>
+		Aaron Ho receives The Royal Society of Chemistry Certificate of Excellence, an award given each year to a graduating student to recognize an outstanding academic and research career. Congratulations Aaron! Way to go!
+		</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">April 2020</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>
+		Shawn's paper in collaboration with the Hai-Hui Xue Lab is published in <a href="https://www.nature.com/articles/s41423-020-0436-5" target="_blank"><i>Cellular & Molecular Immunology</i></a>!
+		<br><br>
+		Mengxue Tian and Hongpan Zhang accept offers from the Biomedical Sciences (BIMS) graduate program and will start PhD studies in the lab this fall. Welcome again Mengxue and Hongpan!
+		</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">March 2020</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>
+		Celina Shih, the lab's first summer undergraduate student, will join the Johns Hopkins University Applied Physics Laboratory as a bioinformatician, after graduating from Hopkins this Spring. Congratulations Celina!
+		<br><br>
+		The lab starts operating remotely on March 9, 2020, with all lab members working from home, as a proactive response to the COVID-19 pandemic.
+		</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">December 2019</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>
+		Zhenjia's collaboration project with the Suresh Cuddapah lab is published in <a href="https://epigeneticsandchromatin.biomedcentral.com/articles/10.1186/s13072-019-0324-3" target="_blank"><i>Epigenetics & Chromatin</i></a>.
+		</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">November 2019</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>
+		Zhenjia and Shawn present posters at <a href="https://ncifrederick.cancer.gov/events/conferences/2019CECBSymposium" target="_blank">the NCI Chromosome Biology Symposium</a>.
+		<br><br>
+		The lab welcomes undergraduate students Anvitha Chimata and Drew Vanichkachorn!
+		</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">October 2019</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>
+		Ruoyao Shi, undergraduate student from Jilin University, and Hongpan Zhang, recent graduate from Sichuan University, join the lab. Welcome Ruoyao and Hongpan!
+		</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">September 2019</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>
+		The lab welcomes undergraduate students Minaal Khan and Cameron Her!
+		<br><br>
+		Chongzhi receives an R35 (Maximizing Investigators' Research Award, MIRA) grant from NIH!
+		</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">August 2019</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>
+		Chongzhi gives invited talks at <a href="http://www.en.sdu.edu.cn/" target="_blank">Shandong University</a> in Jinan, <a href="http://english.cams.cn/keylabs/1.html" target="_blank">State Key Laboratory of Cardiovascular Disease at Peking Union Medical College</a>, and the <a href="https://feng.ifeng.com/c/7oqfOwaj5zI" target="_blank">14th International Bioinformatics Workshop (IBW 2019)</a> in Beijing, during his visit in China.
+		<br><br>
+		Shawn gives a poster presentation at the <a href="https://www.symposium.psu.edu/" target="_blank">38th Summer Symposium in Molecular Biology</a> at Penn State University.
+		</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">July 2019</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>
+		The lab welcomes undergraduate student Nathan Lee!
+		</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">May 2019</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>
+		The lab welcomes undergraduate student Courtney Laughlin and NSF REU summer student Sekou Lowe!
+		<br><br>
+		Shawn gives a talk at 2019 BMG Postdoc Symposium.
+		<br><br>
+		5 Lab members give <a href="https://recomb2019.org/materials/#AccPost" target="_blank">poster presentations</a> at the <a href="https://recomb2019.org/" target="_blank">RECOMB 2019</a> meeting in Washington, DC. Way to go Zhenjia, Shawn, Jeffrey, Wenjing, and Yifan!
+		<br><br>
+		Jeffrey Yoo receives a Small Research and Travel Grant from UVA College of Arts and Sciences, for presenting a poster at RECOMB 2019. Congratulations Jeffrey!
+		</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">April 2019</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>
+		The Zang Lab welcomes undergraduate students Leyao Li, Megan Grieco, Xinyue Qiu, and Zack Thomas!<br><br>
+		Zhenjia presents a <a href="https://www.abstractsonline.com/pp8/#!/6812/presentation/3407" target="_blank">poster</a> at AACR Annual Meeting 2019 in Atlanta, GA.
+		</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">February 2019</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>
+		The Zang Lab welcomes undergraduate students Ben Ke, Sophie Park, Maggie Bujor, and Ishaan Dey!
+		</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">December 2018</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>
+		Zhenjia and Shawn present posters at 2018 Biochemistry and Molecular Genetics Departmental Retreat.
+		</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">November 2018</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>
+		<a href="http://faculty.virginia.edu/zanglab/bartweb" target="_blank">BART web interface (beta version)</a> is released! Upload a gene list, and let us predict what transcription factors might regulate them through enhancers.
+		</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">October 2018</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>Chongzhi is inducted into the <a href="https://faculty.med.virginia.edu/facultyaffairs/honors/millipub-club/" target="_blank">MilliPub Club</a>, which honors UVA School of Medicine faculty members who have authored a single paper that has been cited over 1,000 times.
+<br><br>
+A lab showcase video is released. See above! Thanks Yayi Feng and Raven Chen!</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">September 2018</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>The lab welcomes visiting scholar Gang Chen, UVA master student Andrew Lee, undergraduate students Zhou Lu, Sarah Kang, Chuanchuan He, and Allison Ryu!</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">August 2018</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>Yifan Zhang, PhD student in the BME program, joins the lab. Welcome Yifan!
+<br><br>
+Chongzhi receives an award from the Jayne Koskinas Ted Giovanis Foundation for Health and Policy, for his proposal presented at the <a href="https://bigdatau.ini.usc.edu/innovationlab2018" target="_blank">BD2K 2018 Data Science Innovation Lab</a>!</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">July 2018</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>Jiangxue Han, first year master student in Data Science Institute, joins the lab. Welcome Jiangxue!
+		<br><br>
+Chongzhi receives a grant from <a href="http://www.phibetapsi.org/national-project/" target="_blank">Phi Beta Psi Charity Trust Fund</a>!
+		</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">May 2018</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>Dr. Sheng'en Shawn Hu receives a fellowship grant from UVA Cancer Center Trainee Support RFA. Congratulations Shawn!
+<br><br>
+Zhenjia, Shawn, and Wen each presents a poster at 2018 UVA Biochemistry and Molecular Genetics Annual Symposium. Way to go!
+<br><br>
+UVA rising second-year student Alexander An joins the lab. Welcome Alex!
+		</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">April 2018</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>Zhenjia gives a talk at 2018 BMG Postdoc Symposium.
+<br><br>Visiting scholar Rong-quan He, oncologist and PhD candidate from Guangxi Medical University in China, and UVA students Yushan Feng and Naifei Pan join the lab. Welcome everyone!</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">March 2018</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>Zhenjia's <a href="https://academic.oup.com/bioinformatics/advance-article-abstract/doi/10.1093/bioinformatics/bty194/4956015" target="_blank">BART paper</a> is accepted to <i>Bioinformatics</i>!</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">February 2018</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>UVA undergraduate students Jeffrey Yoo, Mike Ferguson, Yuantao Chen, and visting student Wen Shen from Nanjing University join the lab. Welcome everyone!
+</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">January 2018</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>The Zang Lab welcomes visiting student Qi Li, PhD candidate in statistics from Tsinghua University, and UVA undergraduate students Stephany Perez, Javier Valcarcel, and John Zhang!</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">December 2017</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>Chongzhi receives an American Cancer Society Institutional Research Grant (ACS IRG).</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">November 2017</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>A new lab member, Dr. Sheng'en Shawn Hu, joins us as Postdoctoral Research Associate. Welcome Shawn! 
+<br><br>Chongzhi gives an invited seminar talk at the <a href="http://www.biostatistics.vcu.edu/2017/11/03/chongzhi-zang-ph-d/" target="_blank">Department of Biostatistics, Virginia Commonwealth University</a> in Richmond.
+<br><br>Zhenjia presents a poster at the <a href="https://www.hsph.harvard.edu/2017-pqg-conference/" target="_blank">Harvard Program in Quantitative Genomics (PQG) Conference</a> in Boston.
+		</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">October 2017</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>Zhenjia presents a poster at the <a href="https://www.nhlbi.nih.gov/news/events/systems-biology-conference-2017" target="_blank">2017 NHLBI Systems Biology Symposium</a>.</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">September 2017</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>Chongzhi gives invited seminar talks at the <a href="http://www.picb.ac.cn/picb/news.jsp?ID=2057&ntype=seminar" target="_blank">CAS-MPG Partner Institute for Computational Biology</a> in Shanghai, <a href="http://www.stat.tsinghua.edu.cn/2017/09/21/mini-symposium-on-cancer-computational-biology/" target="_blank">Tsinghua University</a>, <a href="https://mp.weixin.qq.com/s/R98UVIW5LDYImvyZYSx7ow" target="_blank">Peking University</a>, <a href="http://bisec.bjut.edu.cn/tzgg/ztbg/2017919/15058118763613944_1.html" target="_blank">Beijing University of Technology</a>, and the <a href="http://www.ibp.cas.cn/xshd/zxxx/201709/t20170925_4864504.html" target="_blank">Institute of Biophysics, Chinese Academy of Sciences</a> in Beijing, during his visit in China.<br><br>
+Yayi Feng, UVA second-year student, joins the lab as a research volunteer. Welcome Yayi!</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">August 2017</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p><a href="https://med.virginia.edu/cphg/2017/08/25/chongzhi-zang-receives-nih-career-development-award/"  target="_blank">Chongzhi receives a K22 grant award from NIH!</a></p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">July 2017</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>Yiren Wang joins the lab as a research assistant. Welcome Yiren!</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">May 2017</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>The Zang lab welcomes summer students Wuwei Tan and Celina Shih!</p>
+	</div>
+</div>
+<div class="row">
+	<div class="column left">
+		<p>
+		<font color="#002F6C">January 2017</font>
+		</p>
+	</div>
+	<div class="column right">
+		<p>Dr. Zhenjia Wang joins the lab as Postdoctoral Research Associate. Welcome Zhenjia!</p>
+	</div>
+</div>
+<br>
+<hr>
+<p style="width: 500px; margin: auto;" align="center">
+<br><br><i>"While the art of printing is left to us science can never be retrograde; what is once acquired of real knowledge can never be lost."<br><br>
+&mdash;Thomas Jefferson, 1799</i><br><br>
+</p>
+<hr>
+<p align="right">Last modified: August 20, 2020</p>
+</div>
+<!-- Start of StatCounter Code for Wix - HTML5 Version -->
+<script type="text/javascript">
+//<![CDATA[
+var sc_project=11285498; 
+var sc_invisible=1; 
+var sc_security="998a3087"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter_xhtml.js'></"+"script>");
+//]]>
+</script>
+<!-- End of StatCounter Code for Wix - HTML5 Version -->
+
+</body></html>
