@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>BART Cancer</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="helpStyle.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+<div id="container">
+  <div id="mainnav">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="">Help</a></li>
+      <li><a href="../contact/index.html">Contact</a></li>
+      <li><a href="http://bartweb.org/" target="_blank">BARTWEB</a></li>
+    </ul>
+  </div>
+  <div id="header">
+    <h1>BART Cancer Database Help Page</h1>
+  </div>
+
+  <div id="content">
+    <!--<h1>How to use this site</h1>
+    <p>Back on the home page, you'll find a link to the actual tool. This page has drop down menus for choosing a cancer type and regulation type. Select your cancer and regulation type of 
+        choice and click submit. A table will appear displaying a likelihood table of transcription factors that control the gene expression in that cancer type. Under the table you'll 
+        find a link to download the table in CSV format.</p>-->
+    <h1>Citations</h1>
+      <p>If you use BART Cancer in your data analysis or publish the results of BART Cancer, 
+        please cite the following papers in the main text of your manuscript:
+        <ol type="1">
+          <li>Wang, Z., Civelek, M., Miller, C. L., Sheffield, N. C., Guertin, M. J., & Zang, C. (2018). BART: A transcription factor prediction tool with query gene sets or epigenomic profiles. <i>Bioinformatics</i>, <b>34</b>(16), 2867-2869.
+            <a href="https://academic.oup.com/bioinformatics/article/34/16/2867/4956015">https://academic.oup.com/bioinformatics/article/34/16/2867/4956015</a></li>
+          <br><li>Mei, S., Meyer, C. A., Zheng, R., Qin, Q., Wu, Q., Jiang, P., Li, B., Shi, X., Wang, B., Fan, J., Shih, C., Brown, M., Zang, C., & Liu, X. S. (2017). Cistrome Cancer: A web resource for integrative gene regulation modeling in cancer. <i>Cancer Research</i>, <b>77</b>(21), e19-e22.
+            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5826647/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5826647/</a></li>
+          
+        </ol>
+      </p>
+    <h1>Manual</h1>
+    <h2>BART Results Submission Form</h2>
+    <p>The submission form to get BART results includes two selection menus. The first asks you to select a cancer type providing both
+      common name and acronym. The second asks to select the gene set BART was run on. For each cancer, there are two BART results. One
+      for the upregulated genes in that cancer compared to corresponding normal, and one for the downregulated genes in that cancer compared
+      to corresponding normal. Once these two are selected, click submit to get the BART results.
+    </p>
+    <img src="radiomanual.PNG" style="width:600px;" class="center">
+    <h2>How to interpret the BART result</h2>
+    <img src="bartmanual.PNG" style="width:1100px;" class="center">
+    <p>The primary BART result is displayed as a table with the following columns:
+      <ul>
+        <li><b>TR:</b> Name of transcriptonal regulator</li>
+        <li><b>Wilcoxon test statistic:</b> Wilcoxon rank-sum test comparing the set of association score from one TF with all the association scores.
+           The higher the test score is, the more likely the TF regulates the input.</li>
+        <li><b>Wilcoxon P-value:</b> One-sided P-value of the Wilcoxon rank-sum test. 
+          The smaller the p-value is, the more significant the TF regulates the input.</li>
+        <li><b>Z-score:</b> Z-score indicates the deviation of the TF's Wilcoxon test score from its background model, which is generated from MSigDB gene sets and H3K27ac profiles. 
+          The background model contains the Wilcoson test score for each TF and each profile.</li>
+        <li><b>Max AUC:</b> Maximum assocation score of each TF in its datasets indication the specific binding pattern 
+          of on dataset has the highest correlatin with the input.</li>
+        <li><b>Relative Rank:</b> Rank indicating average between Wicoxon P-value, Z-score, and maximum association score 
+          and then dividing the absolute rank by the total number of TFs.</li>
+        <li><b>Irwin-Hall P-value:</b> Indicates the rank significance. Irwin-Hall describes the probability distribution for a random variable define as the sum of a number of 
+          independent random variables, each having uniform distribution. The smaller the P-value is, the more significant the rank is.</li>
+      </ul>
+    </p>
+    <p>
+      Other output data files are also available for download.
+      <ul>
+        <li><b>Differentially Expressed Genes:</b> Provides list of selected differentially expressed genes used as input 
+        for BART to get the given result.</li>
+        <li><b>Adaptive Lasso File:</b> Provides regression information that tells which representative H3K27ac samples
+         are selected along with coefficients through adaptive lasso regression and sample annotations including cell line, 
+        cell type or tissue type.</li>
+        <li><b>AUC File:</b> Provides the association score of each TR ChIP-seq dataset with the genome cis-regulatory profile.</li>
+      </ul>
+    </p>
+    <a name="plot_help"></a>
+    <h2>Transcriptional Regulator Plots</h2>
+    <p>Below the BART Results section, you will find a list of transcriptional regulators and corresponding plots.
+       These display various TR specific data in bubble plot, violin plot, and bar chart form. To view different plots, click 
+       the name of the TR from the chart to the left of the plots. Note that likelihood scores for every TR are not available, 
+       when selected the plots using that data will display "N.A." or will have altered axes to reflect the lack of data.
+       <ul>
+         <li><b>Bubble Plot</b><p>This bubble plot combines information from BART rank, Cistrome Cancer's likelihood ratio, and expression level.
+          Each cancer type is plotted on a 1 - relative rank vs likelihood ratio axis so that the top right quadrant
+          contains those cancer types in which the transcriptional regulator ranked high in likelihood and high in BART rank.
+          The size of the bubble corresponds to its relative expression level using log(FPKM + 0.1) with the highest rank (1) 
+          being the largest bubble, and the lowest rank (15) being the smallest bubble. </p>
+          <p>If the likelihood ratio was not available from Cistrome Cancer, the bubbles were plotted just on the rank axis such that 
+            the higher bubbles correspond to high BART rank. </p></li>
+          
+          <li><b>Expression Level</b><p>This plot displays the distribution of the expression level of each transcriptional regulator 
+            in each of the cancer types. These violin plots were generated using the TCGA expression of log(FPKM + 0.1).
+          </p></li>
+
+          <li><b>BART Rank</b><p>The BART Rank plot displays the transcriptional regulator's rank across all cancer types. 
+            They are displayed as 1 - Relative Rank so that higher bars correspond to better predictions.
+          </p></li>
+
+          <li><b>Likelihood Ratio</b><p>This plot displays the likelihood ratio of the transcriptional regulator from Cistrome Cancer.
+            Note that there are far fewer transcriptional regulators included in Cistrome Cancer compared to BART Cancer.
+          </p></li>
+       </ul>
+
+
+    <h1>Results Process</h1>
+    <p>Patient samples were taken from all cancer types from <a href="https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga">The Cancer Genome Atlas Program</a> (TCGA). 
+        Samples were then clustered based on their expression profiles (log2 of FPKM, with pseudo-count 0.1) using k-means clustering (n=31). The image below shows the results of the clustering and cancer types were re annotated by their cluster.<br><br>
+        <img src="cluster_fig.png" alt="Clustering Results" style="width:916px;height:1092px;" class="center"></p><br>
+        <p>Some TCGA cancers had similar expression profiles and were re-clustered as one cancer. Colon adenocarcinoma (COAD) clustered with Rectum adenocarcinoma (READ) to form colorectal adenocarcinoma (COAD_READ). 
+        Stomach adenocarcinoma (STAD) clustered with Esophageal carcinoma (ESCA) to form Stomach and Esophageal carcinoma (STES). Additionally, BRCA was separated into
+        two subtypes. The cluster containing 833 samples has been labeled as BRCA_1, for mainly luminal breast cancer (764 in 833 are luminal), and the cluster with 234 samples has been labeled as BRCA_2, for mainly basal breast cancer (176 in 234 are basal).
+        Cancer types that had corresponding normal samples (15 cancer types as indicated by black boxes) were then used to determine differentially expressed genes using DESeq2. Differentially expressed 
+        genes were defined as those with adjusted <i>p</i><span>&ndash;</span>value < 1e-7 and log2(Fold Change) greater than 1 for upregulated genes and less than -1 for downregulated genes. The differentially expressed genes 
+        (both up and down) were used as input to BART to predict functional transcriptional regulators in each cancer type. </p><br>
+        <p>In order to double-check the identification of differentially expressed genes, Venn diagrams were drawn to compare 
+          the number of upregulated genes from the Cistrome Cancer project and the newly identified upregulated genes as seen below 
+          (blue is Cistrome Cancer upregulated genes and green is newly identified upregulated genes).</p>
+        <div class="scrollmenu">
+          <img src="vennDiagrams/BLCAvennDiagram.png" style="width:405px;height:360px;">
+          <img src="vennDiagrams/BRCA_1vennDiagram.png" style="width:405px;height:360px;">
+          <img src="vennDiagrams/BRCA_2vennDiagram.png" style="width:405px;height:360px;">
+          <img src="vennDiagrams/COAD_READvennDiagram.png" style="width:405px;height:360px;">
+          <img src="vennDiagrams/HNSCvennDiagram.png" style="width:405px;height:360px;">
+          <img src="vennDiagrams/KICHvennDiagram.png" style="width:405px;height:360px;">
+          <img src="vennDiagrams/KIRCvennDiagram.png" style="width:405px;height:360px;">
+          <img src="vennDiagrams/KIRPvennDiagram.png" style="width:405px;height:360px;">
+          <img src="vennDiagrams/LIHCvennDiagram.png" style="width:405px;height:360px;">
+          <img src="vennDiagrams/LUADvennDiagram.png" style="width:405px;height:360px;">
+          <img src="vennDiagrams/LUSCvennDiagram.png" style="width:405px;height:360px;">
+          <img src="vennDiagrams/PRADvennDiagram.png" style="width:405px;height:360px;">
+          <img src="vennDiagrams/STESvennDiagram.png" style="width:405px;height:360px;">
+          <img src="vennDiagrams/THCAvennDiagram.png" style="width:405px;height:360px;">
+          <img src="vennDiagrams/UCECvennDiagram.png" style="width:405px;height:360px;">
+        </div>
+  
+  <!--<div id="sidebar">
+    <h3>Css Stuff</h3>
+    <div id="nav-right">
+      <ul>
+        <li><a href="http://all-free-download.com/free-website-templates/">Css Drive</a></li>
+        <li><a href="http://all-free-download.com/free-website-templates/">Dynamic Drive</a></li>
+        <li><a href="http://all-free-download.com/free-website-templates/">Style The Web</a></li>
+        <li><a href="http://all-free-download.com/free-website-templates/">Css Import</a></li>
+        <li><a href="http://all-free-download.com/free-website-templates/">Think Vitamin</a></li>
+      </ul>
+    </div>
+    <h3>Gallery Quick Links</h3>
+    <p class="thumbs"> <a href="http://all-free-download.com/free-website-templates/"><img src="imgs/thumb.jpg" width="40" height="40" alt="" /></a> <a href="http://all-free-download.com/free-website-templates/"><img src="imgs/thumb.jpg" width="40" height="40" alt="" /></a> <a href="http://all-free-download.com/free-website-templates/"><img src="imgs/thumb.jpg" width="40" height="40" alt="" /></a> <a href="http://all-free-download.com/free-website-templates/"><img src="imgs/thumb.jpg" width="40" height="40" alt="" /></a></p>
+    <p class="thumbs"> <a href="http://all-free-download.com/free-website-templates/"><img src="imgs/thumb.jpg" width="40" height="40" alt="" /></a> <a href="http://all-free-download.com/free-website-templates/"><img src="imgs/thumb.jpg" width="40" height="40" alt="" /></a> <a href="http://all-free-download.com/free-website-templates/"><img src="imgs/thumb.jpg" width="40" height="40" alt="" /></a> <a href="http://all-free-download.com/free-website-templates/"><img src="imgs/thumb.jpg" width="40" height="40" alt="" /></a></p>
+    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, . Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+    <h3>Recent Updates</h3>
+    <p class="thumbs"> <a href="http://all-free-download.com/free-website-templates/"><img src="imgs/thumb.jpg" width="40" height="40" alt="" /></a> <a href="http://all-free-download.com/free-website-templates/"><img src="imgs/thumb.jpg" width="40" height="40" alt="" /></a> <a href="http://all-free-download.com/free-website-templates/"><img src="imgs/thumb.jpg" width="40" height="40" alt="" /></a> <a href="http://all-free-download.com/free-website-templates/"><img src="imgs/thumb.jpg" width="40" height="40" alt="" /></a></p>
+    <p class="thumbs"> <a href="http://all-free-download.com/free-website-templates/"><img src="imgs/thumb.jpg" width="40" height="40" alt="" /></a> <a href="http://all-free-download.com/free-website-templates/"><img src="imgs/thumb.jpg" width="40" height="40" alt="" /></a> <a href="http://all-free-download.com/free-website-templates/"><img src="imgs/thumb.jpg" width="40" height="40" alt="" /></a> <a href="http://all-free-download.com/free-website-templates/"><img src="imgs/thumb.jpg" width="40" height="40" alt="" /></a></p>
+    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+  </div>
+   End Side bar and thumbs
+-->
+  <!--
+   Start of footer data
+-->
+</div>
+  <div id="footer-contents">
+    <p id="footer-copy">Chongzhi Zang Lab 2020</p>
+  </div>
+  <!--
+   End of footer data
+
+</div>
+<div align=center>Chongzhi Zang Lab 2020</div>
+-->
+</body>
+</html>
