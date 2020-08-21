@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="default.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="ism/css/my-slider.css"/>
+<script src="ism/js/ism-2.2.min.js"></script>
+<script language="javascript" type="text/javascript">
+function update_modtime() {
+  var x = new Date(document.lastModified);
+  document.getElementById("last_mod").innerHTML="Last modified: "+x;
+}
+</script>
+<style>
+body {margin:0;}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 4px 20px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+<title>Chongzhi Zang Lab</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+<body bgcolor="white" onload="update_modtime();">
+<div style="width: 900px; margin: auto;">
+<img align="left" width="170" src="UVA-med-3.jpg">
+<img align="right" width="150" src="cphg_logo.jpg">
+<h2 style="font-size: 28pt" align="center"><a href="http://faculty.virginia.edu/zanglab" style="text-decoration:none;"><font color="#002F6C">Chongzhi Zang Lab&nbsp;&nbsp;</font></a></h2>
+
+<ul class="topnav" id="myTopnav">
+  <li><a href="index.htm">Home</a></li>
+  <li><a class="active" href="people.htm">People</a></li>
+  <li><a href="research.htm">Research</a></li>
+  <li><a href="publication.htm">Publications</a></li>
+  <li><a href="software.htm">Software</a></li>
+  <li><a href="teaching.htm">Teaching</a></li>
+  <li><a href="position.htm">Positions</a></li>
+  <li><a href="contact.htm">Contact</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+  </li>
+</ul>
+
+<!--<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+<div class="ism-slider" data-transition_type="fade" data-play_type="loop" id="home-slider">
+  <ol>
+    <li>
+      <img src="ism/image/slides/_u/1488566891987_67648.jpg">
+    </li>
+    <li>
+      <img src="ism/image/slides/_u/1488727852701_364381.jpg">
+    </li>
+    <li>
+      <img src="ism/image/slides/_u/1488567032192_666768.jpg">
+    </li>
+    <li>
+      <img src="ism/image/slides/_u/1488736436612_647904.png">
+    </li>
+  </ol>
+</div>
+-->
+<h2 align="center"><font color="#002F6C">Publications</font></h2>
+<hr>
+<h3><a href="https://scholar.google.com/citations?user=GV7vSDMAAAAJ" target="_blank"><font color="#002F6C">Google Scholar profile</font></a></h3>
+<hr>
+<h3><font color="#002F6C">Recent Preprints</font></h3>
+* indicates authors with equal contributions. # indicates co-corresponding authors. Underscored indicates the Zang Lab members.
+<ol style="padding-left: 24px;">
+<li><p><a href="https://www.biorxiv.org/content/10.1101/2020.08.19.258095v1" target="_blank">BART3D: Inferring transcriptional regulators associated with differential chromatin interactions from Hi-C data</a><br> 
+<u>Zhenjia Wang</u>, <u>Yifan Zhang</u>, <u>Chongzhi Zang</u>
+<br>
+<b>bioRxiv</b> 2020.08.19.258095 (2020)
+</p></li>
+<li><p><a href="https://www.biorxiv.org/content/10.1101/2020.02.17.952838v1" target="_blank">BARTweb: a web server for transcription factor association analysis</a><br> 
+<u>Wenjing Ma</u>*, <u>Zhenjia Wang</u>*, <u>Yifan Zhang</u>*, Neal E Magee, Yang Chen, <u>Chongzhi Zang</u>
+<br>
+<b>bioRxiv</b> 2020.01.17.952838 (2020)
+</p></li>
+<li><p><a href="https://www.biorxiv.org/content/10.1101/2020.01.17.910687v1" target="_blank">Cancer-specific CTCF binding facilitates oncogenic transcriptional dysregulation</a><br> 
+Celestia Fang*, <u>Zhenjia Wang</u>*, Cuijuan Han, Stephanie L Safgren, Kathryn A Helmin, Emmalee R Adelman, Kyle P Eagen, Alexandre Gaspar-Maia, Maria E Figueroa, Benjamin D Singer, Aakrosh Ratan, Panagiotis Ntziachristos<sup>#</sup>, <u>Chongzhi Zang</u><sup>#</sup>
+<br>
+<b>bioRxiv</b> 2020.01.17.910687. Accepted to <i><b>Genome Biology</b></i> (2020)
+</p></li>
+<li><p><a href="https://www.biorxiv.org/content/10.1101/806828v2" target="_blank">Polyadenylation of Histone H3.1 mRNA promotes cell transformation by displacing H3.3 from gene regulatory elements</a><br> 
+Danqi Chen*, Qiao Yi Chen*, <u>Zhenjia Wang</u>*, Yusha Zhu, Thomas Kluz, <u>Wuwei Tan</u>, Jinquan Li, Feng Wu, Lei Fang, Xiaoru Zhang, <u>Rongquan He</u>, Steven Shen, Hong Sun, <u>Chongzhi Zang</u><sup>#</sup>, Chunyuan Jin<sup>#</sup>, Max Costa<sup>#</sup>
+<br>
+<b>bioRxiv</b> 806828 (2019). Accepted to <i><b>iScience</b></i> (2020)
+</p></li>
+</ol>
+<hr>
+<h3><font color="#002F6C">Selected Publications</font></h3>
+<ol style="padding-left: 24px;">
+<li><p><a href="https://www.nature.com/articles/s41586-020-2493-4" target="_blank">Expanded encyclopaedias of DNA elements in the human and mouse genomes</a><br> 
+<u>The ENCODE Project Consortium</u>, Jill E. Moore*, Michael J. Purcaro*, Henry E. Pratt*, Charles B. Epstein*, Noam Shoresh*, Jessika Adrian*, Trupti Kawli*, Carrie A. Davis*, Alexander Dobin*, Rajinder Kaul*, Jessica Halow*, Eric L. Van Nostrand*, Peter Freese*, David U. Gorkin*, Yin Shen*, Yupeng He*, Mark Mackiewicz*, Florencia Pauli-Behn*, Brian A. Williams, Ali Mortazavi, Cheryl A. Keller, Xiao-Ou Zhang, Shaimae I. Elhajjajy, Jack Huey, Diane E. Dickel, Valentina Snetkova, Xintao Wei, Xiaofeng Wang, Juan Carlos Rivera-Mulia, Joel Rozowsky, Jing Zhang, Surya B. Chhetri, Jialing Zhang, Alec Victorsen, Kevin P. White, Axel Visel, Gene W. Yeo, Christopher B. Burge, Eric Lécuyer, David M. Gilbert, Job Dekker, John Rinn, Eric M. Mendenhall, Joseph R. Ecker, Manolis Kellis, Robert J. Klein, William S. Noble, Anshul Kundaje, Roderic Guigó, Peggy J. Farnham, J. Michael Cherry<sup>#</sup>, Richard M. Myers<sup>#</sup>, Bing Ren<sup>#</sup>, Brenton R. Graveley<sup>#</sup>, Mark B. Gerstein<sup>#</sup>, Len A. Pennacchio<sup>#</sup>, Michael P. Snyder<sup>#</sup>, Bradley E. Bernstein<sup>#</sup>, Barbara Wold<sup>#</sup>, Ross C. Hardison<sup>#</sup>, Thomas R. Gingeras<sup>#</sup>, John A. Stamatoyannopoulos<sup>#</sup>, Zhiping Weng<sup>#</sup><br>
+<i><b>Nature</b></i> 583, 699&ndash;710 (2020)
+</p></li>
+<li><p><a href="https://www.nature.com/articles/s41586-020-2449-8" target="_blank">Perspectives on ENCODE</a><br> 
+<u>The ENCODE Project Consortium</u>, Michael P. Snyder<sup>#</sup>, Thomas R. Gingeras, Jill E. Moore, Zhiping Weng, Mark B. Gerstein, Bing Ren, Ross C. Hardison, John A. Stamatoyannopoulos, Brenton R. Graveley, Elise A. Feingold, Michael J. Pazin, Michael Pagan, Daniel A. Gilchrist, Benjamin C. Hitz, J. Michael Cherry, Bradley E. Bernstein, Eric M. Mendenhall, Daniel R. Zerbino, Adam Frankish, Paul Flicek, Richard M. Myers<br>
+<i><b>Nature</b></i> 583, 693&ndash;698 (2020)
+</p></li>
+<li><p><a href="https://www.nature.com/articles/s41467-020-14743-w" target="_blank">An integrative ENCODE resource for cancer genomics</a><br> 
+Jing Zhang*, Donghoon Lee*, Vineet Dhiman*, Peng Jiang*, Jie Xu*, Patrick McGillivray*, Hongbo Yang*, Jason Liu, William Meyerson, Declan Clarke, Mengting Gu, Shantao Li, Shaoke Lou, Jinrui Xu, Lucas Lochovsky, Matthew Ung, Lijia Ma, Shan Yu, Qin Cao, Arif Harmanci, Koon-Kiu Yan, Anurag Sethi, Gamze Gürsoy, Michael Rutenberg Schoenberg, Joel Rozowsky, Jonathan Warrell, Prashant Emani, Yucheng T. Yang, Timur Galeev, Xiangmeng Kong, Shuang Liu, Xiaotong Li, Jayanth Krishnan, Yanlin Feng, Juan Carlos Rivera-Mulia, Jessica Adrian, James R Broach, Michael Bolt, Jennifer Moran, Dominic Fitzgerald, Vishnu Dileep, Tingting Liu, Shenglin Mei, Takayo Sasaki, Claudia Trevilla-Garcia, Su Wang, Yanli Wang, <u>Chongzhi Zang</u>, Daifeng Wang, Robert J. Klein, Michael Snyder, David M. Gilbert, Kevin Yip, Chao Cheng, Feng Yue<sup>#</sup>, X. Shirley Liu<sup>#</sup>, Kevin P. White<sup>#</sup>, Mark Gerstein<sup>#</sup><br>
+<i><b>Nature Communications</b></i> 11, 3696 (2020)
+</p></li>
+<li><p><a href="https://www.nature.com/articles/s41423-020-0436-5" target="_blank">Ectopic Tcf1 expression instills a stem-like program in exhausted CD8<sup>+</sup> T cells to enhance viral and tumor immunity</a><br> 
+Qiang Shan*, <u>Sheng’en Hu</u>*, Xia Chen, Derek B. Danahy, Vladimir P. Badovinac, <u>Chongzhi Zang</u><sup>#</sup>, Hai-Hui Xue<sup>#</sup><br>
+<i><b>Cellular & Molecular Immunology</b></i>, doi:10.1038/s41423-020-0436-5 (2020)
+</p></li>
+<li><p><a href="https://www.nature.com/articles/s41598-020-61369-5" target="_blank">An epilepsy-associated mutation in the nuclear import receptor KPNA7 reduces nuclear localization signal binding</a><br> 
+Luke T. Oostdyk, <u>Zhenjia Wang</u>, <u>Chongzhi Zang</u>, Hui Li, Michael J. McConnell, Bryce M. Paschal<br>
+<i><b>Scientific Reports</b></i> 10, 4844 (2020)
+</p></li>
+<li><p><a href="https://epigeneticsandchromatin.biomedcentral.com/articles/10.1186/s13072-019-0324-3" target="_blank">Nickel induced transcriptional changes persist post exposure through epigenetic reprograming</a><br> 
+Cynthia C Jose*, <u>Zhenjia Wang</u>*, Vinay Singh Tanwar, Xiaoru Zhang, <u>Chongzhi Zang</u><sup>#</sup>, Suresh Cuddapah<sup>#</sup><br>
+<i><b>Epigenetics & Chromatin</b></i> 12, 75 (2019)
+</p></li>
+<li><p><a href="https://www.pnas.org/content/early/2019/11/13/1908155116" target="_blank">Deciphering essential cistromes using genome-wide CRISPR screens</a><br> 
+Teng Fei*, Wei Li*, Jingyu Peng*, Tengfei Xiao, Chen-Hao Chen, Alexander Wu, Jialiang Huang, <u>Chongzhi Zang</u>, X. Shirley Liu<sup>#</sup>, Myles Brown<sup>#</sup><br>
+<i><b>Proceedings of the National Academy of Sciences USA</b></i> 116, 25186&ndash;25195 (2019)
+</p></li>
+<li><p><a href="https://doi.org/10.1093/bioinformatics/btz812" target="_blank">YY1 is a cis-regulator in the organoid models of high mammographic density</a><br> 
+Qingsu Cheng, Mina Khoshdeli, Bradley S. Ferguson, Kosar Jabbari, <u>Chongzhi Zang</u><sup>#</sup>, Bahram Parvin<sup>#</sup><br>
+<i><b>Bioinformatics</b></i> 36, 1663&ndash;1667 (2019)
+</p></li>
+<li><p><a href="https://www.sciencedirect.com/science/article/pii/S001448271930326X" target="_blank">Specific inhibition of DPY30 activity by ASH2L-derived peptides suppressesblood cancer cell growth</a><br> 
+Kushani K. Shah, Robert H. Whitaker, Theodore Busby, Jing Hu, Bi Shi, <u>Zhenjia Wang</u>, <u>Chongzhi Zang</u>, William J.Placzek, Hao Jiang<br>
+<i><b>Experimental Cell Research</b></i> 382, 111485 (2019)
+</p></li>
+<li><p><a href="https://academic.oup.com/bioinformatics/advance-article-abstract/doi/10.1093/bioinformatics/bty194/4956015" target="_blank">BART: a transcription factor prediction tool with query gene sets or epigenomic profiles</a><br> 
+<u>Zhenjia Wang</u>, Mete Civelek, Clint L. Miller, Nathan C. Sheffield, Michael J. Guertin, <u>Chongzhi Zang</u><br>
+<i><b>Bioinformatics</b></i> 34, 2867&ndash;2869 (2018)
+</p></li>
+<li><p><a href="https://doi.org/10.1073/pnas.1722617115" target="_blank">Estrogen-regulated feedback loop limits the efficacy of estrogen receptor–targeted breast cancer therapy</a><br> 
+Tengfei Xiao*, Wei Li*, Xiaoqing Wang, Han Xu, Jixin Yang, Qiu Wu, Ying Huang, Joseph Geradts, Peng Jiang, Teng Fei, David Chi, <u>Chongzhi Zang</u>, Qi Liao, Jonathan Rennhack, Eran Andrechek, Nanlin Li, Simone Detre, Mitchell Dowsett, Rinath M. Jeselsohn, X. Shirley Liu<sup>#</sup>, Myles Brown<sup>#</sup><br>
+<i><b>Proceedings of the National Academy of Sciences USA</b></i> 115, 7869&ndash;7878 (2018)
+</p></li>
+<li><p><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/mc.22802" target="_blank">Nickel exposure induces persistent mesenchymal phenotype in human lung epithelial cells through epigenetic activation of ZEB1</a><br> 
+Cynthia C Jose, Lakshmanan Jagannathan, Vinay Singh Tanwar, Xiaoru Zhang, <u>Chongzhi Zang</u>, Suresh Cuddapah<br>
+<i><b>Molecular Carcinogenesis</b></i> 57, 794&ndash;806 (2018)
+</p></li>
+<li><p><a href="https://academic.oup.com/nar/article/doi/10.1093/nar/gkx1053/4602870" target="_blank">Universal correction of enzymatic sequence bias reveals molecular signatures of protein/DNA interactions</a><br> 
+André L. Martins, Ninad M. Walavalkar, Warren D. Anderson, <u>Chongzhi Zang</u>, Michael J. Guertin<br>
+<i><b>Nucleic Acids Research</b></i> 46 (2), e9 (2018)
+</p></li>
+<li><p><a href="http://cancerres.aacrjournals.org/content/77/21/e19" target="_blank">Cistrome Cancer: a web resource for integrative gene regulation modeling in cancer</a><br> 
+Shenglin Mei, Clifford A. Meyer, Rongbin Zheng, Qian Qin, Qiu Wu, Peng Jiang, Bo Li, Xiaohui Shi, Binbin Wang, Jingyu Fan, <u>Celina Shih</u>, Myles Brown, <u>Chongzhi Zang</u><sup>#</sup>, X. Shirley Liu<sup>#</sup><br>
+<i><b>Cancer Research</b></i> 77, e19&ndash;e22 (2017)
+</p></li>
+<li><p><a href="http://stke.sciencemag.org/content/10/477/eaag1598" target="_blank">Genome-wide identification and characterization of Notch transcription complex-binding sequence-paired sites in leukemia cells</a><br> 
+Eric Severson*, Kelly L. Arnett*, Hongfang Wang*, <u>Chongzhi Zang</u>*, Len Taing, Hudan Liu, Warren S. Pear, X. Shirley Liu, Stephen C. Blacklow<sup>#</sup>, Jon C. Aster<sup>#</sup><br>
+<i><b>Science Signaling</b></i> 10, 477, eaag1598 (2017)
+</p></li>
+<p><font color="#002F6C"><b>Prior to joining UVA</b></font></p>
+<li><p>
+<a href="https://academic.oup.com/nar/article-lookup/doi/10.1093/nar/gkw983" target="_blank">Cistrome Data Browser: an integrated data portal for ChIP-Seq and chromatin accessibility data in human and mouse</a><br>
+Shenglin Mei*, Qian Qin*, Qiu Wu*, Hanfei Sun, Rongbin Zheng, <u>Chongzhi Zang</u>, Muyuan Zhu, Jiaxin Wu, Xiaohui Shi, Len Taing, Tao Liu, Myles Brown, Clifford A. Meyer<sup>#</sup>, X. Shirley Liu<sup>#</sup><br>
+<i><b>Nucleic Acids Research</b></i> 45 (D1), D658&ndash;D662 (2016) 
+</p></li><li><p>
+<a href="http://genome.cshlp.org/content/26/10/1417" target="_blank">Modeling cis-regulation with a compendium of genome-wide histone H3K27ac profiles</a><br>
+Su Wang*, <u>Chongzhi Zang</u>*, Tengfei Xiao, Jingyu Fan, Shenglin Mei, Qian Qin, Qiu Wu, Xujuan Li, Kexin Xu, Housheng Hansen He, Myles Brown, Clifford A. Meyer<sup>#</sup>, X. Shirley Liu<sup>#</sup><br>
+<i><b>Genome Research</b></i> 26, 1417&ndash;1429 (2016)
+</p></li><li><p>
+<a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-1274-4" target="_blank">ChiLin: a comprehensive ChIP-seq and DNase-seq quality control and analysis pipeline</a><br>
+Qian Qin*, Shenglin Mei*, Qiu Wu*, Hanfei Sun*, Lewyn Li*, Len Taing, Sujun Chen, Fugen Li, Tao Liu, <u>Chongzhi Zang</u>, Han Xu, Yiwen Chen, Clifford A. Meyer, Yong Zhang, Myles Brown, Henry W. Long<sup>#</sup>, X. Shirley Liu<sup>#</sup><br>
+<i><b>BMC Bioinformatics</b></i> 17, 404 (2016)
+</p></li><li><p>
+<a href="http://www.nature.com/articles/srep30255" target="_blank">NF-E2, FLI1 and RUNX1 collaborate at areas of dynamic chromatin to activate transcription in mature mouse megakaryocytes</a><br>
+<u>Chongzhi Zang</u>*, Annouck Luyten*, Christina Chen, X. Shirley Liu, Ramesh A. Shivdasani<br>
+<i><b>Scientific Reports</b></i> 6, 30255 (2016)
+</p></li><li><p>
+<a href="http://www.nature.com/articles/ncomms11305" target="_blank">High-dimensional genomic data bias correction and data integration using MANCIE</a><br> 
+<u>Chongzhi Zang</u>*, Tao Wang*, Ke Deng, Bo Li, Sheng’en Hu, Qian Qin, Tengfei Xiao, Shihua Zhang, Clifford A. Meyer, Housheng Hansen He, Myles Brown, Jun S. Liu, Yang Xie<sup>#</sup>, X. Shirley Liu<sup>#</sup><br>
+<i><b>Nature Communications</b></i> 7, 11305 (2016)
+</p></li><li><p>
+<a href="http://mcr.aacrjournals.org/content/14/2/163" target="_blank">Integrative analysis reveals the transcriptional collaboration between EZH2 and E2F1 in the regulation of cancer-related gene expression</a><br>
+Han Xu*, Kexin Xu*, Housheng H. He, <u>Chongzhi Zang</u>, Chen-Hao Chen, Yiwen Chen, Qian Qin, Su Wang, Chenfei Wang, Sheng’en Hu, Fugen Li, Henry Long, Myles Brown<sup>#</sup>, X. Shirley Liu<sup>#</sup><br>
+<i><b>Molecular Cancer Research</b></i> 14, 163&ndash;172 (2016)
+</p></li><li><p>
+<a href="http://www.nature.com/ng/journal/v47/n11/full/ng.3404.html" target="_blank">Partitioning heritability by functional annotation using genome-wide association summary statistics</a><br>
+Hilary K. Finucane*<sup>#</sup>, Brendan Bulik-Sullivan*<sup>#</sup>, Alexander Gusev, Gosia Trynka, Yakir Reshef, Po-Ru Loh, Verneri Anttila, Han Xu, <u>Chongzhi Zang</u>, Kyle Farh, Stephan Ripke, Felix R. Day, ReproGen Consortium, Schizophrenia Working Group of the Psychiatric Genomics Consortium, The RACI Consortium, Shaun Purcell, Eli Stahl, Sara Lindstrom, John R. B. Perry, Yukinori Okada, Soumya Raychaudhuri, Mark J. Daly, Nick Patterson, Benjamin M. Neale<sup>#</sup>, Alkes L. Price<sup>#</sup><br>
+<i><b>Nature Genetics</b></i> 47, 1228&ndash;1235 (2015)
+</p></li><li><p>
+<a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0808-9" target="_blank">Network analysis of gene essentiality in functional genomics experiments</a><br>
+Peng Jiang, Hongfang Wang, Wei Li, <u>Chongzhi Zang</u>, Bo Li, Yinling J. Wong, Clifford Meyer, Jun S. Liu, Jon C. Aster, X. Shirley Liu<br>
+<i><b>Genome Biology</b></i> 16, 239 (2015)
+</p></li><li><p>
+<a href="http://onlinelibrary.wiley.com/doi/10.1002/jcp.24872/abstract" target="_blank">The role of Notch receptors in transcriptional regulation</a><br>
+Hongfang Wang, <u>Chongzhi Zang</u>, X. Shirley Liu, Jon C. Aster<br>
+<i><b>Journal of Cellular Physiology</b></i> 230, 982&ndash;988 (2015)
+</p></li><li><p>
+<a href="http://www.pnas.org/content/111/46/E4946.full" target="_blank">Long-range enhancer activity determines Myc sensitivity to Notch inhibitors in T cell leukemia</a><br>
+Yumi Yashiro-Ohtani*, Hongfang Wang*, <u>Chongzhi Zang</u>, Kelly L. Arnett, Will Bailis, Yugong Ho, Birgit Knoechel, Claudia Lanauze, Lumena Louis, Katherine S. Forsyth, Sujun Chen, Yoonjie Chung, Jonathan Schug, Gerd A. Blobel, Stephen A. Liebhaber, Bradley E. Bernstein, Stephen C. Blacklow, X. Shirley Liu, Jon C. Aster<sup>#</sup>, Warren S. Pear<sup>#</sup><br>
+<i><b>Proceedings of the National Academy of Sciences USA</b></i> 111(46), E4946&ndash;E4953 (2014)
+</p></li><li><p>
+<a href="http://www.cell.com/ajhg/abstract/S0002-9297(14)00426-1" target="_blank">Partitioning heritability of regulatory and cell-type-specific variants across 11 common diseases</a><br>
+Alexander Gusev<sup>#</sup>, S. Hong Lee, Gosia Trynka, Hilary Finucane, Bjarni J. Vilhjálmsson, Han Xu, <u>Chongzhi Zang</u>, Stephan Ripke, Brendan Bulik-Sullivan, Eli Stahl, Schizophrenia Working Group of the Psychiatric Genomics Consortium, SWE-SCZ Consortium, Anna K. Kähler, Christina M. Hultman, Shaun M. Purcell, Steven A. McCarroll, Mark Daly, Bogdan Pasaniuc, Patrick F. Sullivan, Benjamin M. Neale, Naomi R. Wray, Soumya Raychaudhuri, Alkes L. Price<sup>#</sup><br>
+<i><b>The American Journal of Human Genetics</b></i> 95, 535&ndash;552 (2014)
+</p></li><li><p>
+<a href="http://cancerdiscovery.aacrjournals.org/content/4/10/1154.long" target="_blank">Discovery of biomarkers predictive of GSI response in triple negative breast cancer and adenoid cystic carcinoma</a><br>
+Alexander Stoeck, Serguei Lejnine, Andrew Truong, Li Pan, Hongfang Wang, <u>Chongzhi Zang</u>, Jing Yuan, Chris Ware, John MacLean, Philip W. Garrett-Engele, Michael Kluk, Jason Laskey, Brian B. Haines, Christopher Moskaluk, Leigh Zawel, Stephen Fawell, D. Gary Gilliland, Theresa Zhang, Brandon Kremer, Birgit Knoechel, Bradley E. Bernstein, Warren S. Pear, X. Shirley Liu, Jon C. Aster, Sriram Sathyanarayanan<br>
+<i><b>Cancer Discovery</b></i> 4(10), 1154&ndash;1167 (2014)
+</p></li><li><p>
+<a href="http://genesdev.cshlp.org/content/28/16/1827" target="_blank">Active enhancers are delineated de novo during hematopoiesis with limited lineage fidelity among specified primary blood cells</a><br>
+Annouck Luyten*, <u>Chongzhi Zang</u>*, X. Shirley Liu<sup>#</sup>, Ramesh A. Shivdasani<sup>#</sup><br>
+<i><b>Genes and Development</b></i> 28, 1827&ndash;1839 (2014)
+</p></li><li><p>
+<a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0419-x" target="_blank">MethylPurify: tumor purity deconvolution and differential methylation detection from single tumor DNA methylomes</a><br>
+Xiaoqi Zheng, Qian Zhao, Huajun Wu, Wei Li, Haiyun Wang, Clifford A. Meyer, Qian Alvin Qin, Han Xu, <u>Chongzhi Zang</u>, Peng Jiang, Fuqiang Li, Yong Hou, Jianxing He, Jun Wang, Jun Wang, Peng Zhang, Yong Zhang, X. Shirley Liu<br>
+<i><b>Genome Biology</b></i> 15, 419 (2014)
+</p></li><li><p>
+<a href="http://www.pnas.org/content/111/2/705.long" target="_blank">NOTCH1-RBPJ complexes drive target gene expression through dynamic interactions with superenhancers</a><br>
+Hongfang Wang*, <u>Chongzhi Zang</u>*, Len Taing, Kelly Arnett, Yinling Joey Wong, Warren S. Pear, Stephen C. Blacklow, X. Shirley Liu<sup>#</sup>, Jon C. Aster<sup>#</sup><br>
+<i><b>Proceedings of the National Academy of Sciences USA</b></i> 111, 715&ndash;710 (2014)
+</p></li><li><p>
+<a href="http://www.nature.com/nmeth/journal/v11/n1/full/nmeth.2762.html" target="_blank">Refined DNase-seq protocol and data analysis reveals intrinsic bias in transcription factor footprint identification</a><br>
+Housheng Hansen He*, Clifford A. Meyer*, Sheng’en Shawn Hu*, Mei-Wei Chen, <u>Chongzhi Zang</u>, Yin Liu, Prakash K. Rao, Teng Fei, Han Xu, Henry Long<sup>#</sup>, X. Shirley Liu<sup>#</sup>, Myles Brown<sup>#</sup><br>
+<i><b>Nature Methods</b></i> 11, 73&ndash;78 (2014)
+</p></li><li><p>
+<a href="http://www.nature.com/nprot/journal/v8/n12/full/nprot.2013.150.html" target="_blank">Targets analysis by integration of transcripome and ChIP-seq data with BETA</a><br>
+Su Wang, Hanfei Sun, Jian Ma, <u>Chongzhi Zang</u>, Chenfei Wang, Juan Wang, Qianzi Tang, Clifford A. Meyer, Yong Zhang<sup>#</sup>, X. Shirley Liu<sup>#</sup><br>
+<i><b>Nature Protocols</b></i> 8, 2502&ndash;2515 (2013)
+</p></li><li><p>
+<a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1002649" target="_blank">Transcriptional regulation of rod photoreceptor homeostasis revealed by in vivo NRL targetome analysis</a><br>
+Hong Hao, Douglas S. Kim, Bernward Klocke, Kory R. Johnson, Kairong Cui, Norimoto Gotoh, <u>Chongzhi Zang</u>, Janina Gregorski, Linn Gieser, Weiqun Peng, Yang Fann, Martin Seifert, Keji Zhao, Anand Swaroop<br>
+<i><b>PLoS Genetics</b></i> 8(4), e1002649 (2012)
+</p></li><li><p>
+<a href="http://science.sciencemag.org/content/329/5994/917.full" target="_blank">PTIP promotes chromatin changes critical for immunoglobulin switch recombination</a><br>
+Jeremy A. Daniel, Margarida A. Santos*, Zhibin Wang*, <u>Chongzhi Zang</u>*, Mila Jankovic, Anna Gazumyan, Kristopher R. Schwab, Arito Yamane, Darius Filsuf, Young-Wook Cho, Kai Ge, Weiqun Peng, Michel C. Nussenzweig, Rafael Casellas, Gregory R. Dressler, Keji Zhao, André Nussenzweig<br>
+<i><b>Science</b></i> 329, 917&ndash;923 (2010)
+</p></li><li><p>
+<a href="http://www.cell.com/immunity/abstract/S1074-7613(10)00206-2" target="_blank">Discrete roles of STAT4 and STAT6 transcription factors in tuning epigenetic modifications and transcription during T helper cell differentiation</a><br>
+Lai Wei*, Golnaz Vahedi*, Hong-Wei Sun, Wendy T. Watford, Hiroaki Takatori, Haydee L. Ramos, Hayato Takahashi, Jonathan Liang, Gustavo Gutierrez-Cruz, <u>Chongzhi Zang</u>, Weiqun Peng, John J. O'Shea, Yuka Kanno<br>
+<i><b>Immunity</b></i> 32, 840&ndash;851 (2010)
+</p></li><li><p>
+<a href="http://www.cell.com/abstract/S0092-8674(09)00841-1" target="_blank">Genome-wide mapping of HATs and HDACs reveals distinct functions in active and inactive genes</a><br>
+Zhibin Wang*, <u>Chongzhi Zang</u>*, Kairong Cui*, Dustin E. Schones, Artem Barski, Weiqun Peng, Keji Zhao<br>
+<i><b>Cell</b></i> 138, 1019&ndash;1031 (2009)
+</p></li><li><p>
+<a href="https://academic.oup.com/bioinformatics/article/25/15/1952/212783" target="_blank">A clustering approach for identification of enriched domains from histone modification ChIP-Seq data</a><br>
+<u>Chongzhi Zang</u>, Dustin E. Schones, Chen Zeng, Kairong Cui, Keji Zhao, Weiqun Peng<br>
+<i><b>Bioinformatics</b></i> 25, 1952&ndash;1958 (2009)
+</p></li><li><p>
+<a href="http://www.nature.com/ng/journal/v41/n8/full/ng.409.html" target="_blank">H3.3/H2A.Z double variant-containing nucleosomes mark ‘nucleosome-free regions’ of active promoters and other regulatory regions</a><br>
+Chunyuan Jin*, <u>Chongzhi Zang</u>*, Gang Wei, Kairong Cui, Weiqun Peng, Keji Zhao<sup>#</sup>, Gary Felsenfeld<sup>#</sup><br>
+<i><b>Nature Genetics</b></i> 41, 941&ndash;945 (2009)
+</p></li><li><p>
+<a href="http://www.cell.com/immunity/abstract/S1074-7613(09)00235-0" target="_blank">Genome-wide analysis of histone methylations reveals chromatin state-based regulation of gene transcription and function of memory CD8+ T cells</a><br>
+Yasuto Araki*, Zhibin Wang*, <u>Chongzhi Zang</u>, William H. Wood, Dustin Schones, Kairong Cui, Tae-Young Roh, Brad Lhotsky, Robert P. Wersto, Weiqun Peng, Kevin G. Becker, Keji Zhao<sup>#</sup>, Nan-ping Weng<sup>#</sup><br>
+<i><b>Immunity</b></i> 30, 912&ndash;925 (2009)
+</p></li><li><p>
+<a href="http://www.cell.com/immunity/abstract/S1074-7613(08)00555-4" target="_blank">Global mapping of H3K4me3 and H3K27me3 reveals specificity and plasticity in lineage fate determination of differentiating CD4+ T cells</a><br>
+Gang Wei*, Lai Wei*, Jinfang Zhu, <u>Chongzhi Zang</u>, Jane Hu-Li, Zhengju Yao, Kairong Cui, Yuka Kanno, Tae-Young Roh, Wendy Watford, Dustin E. Schones, Weiqun Peng, Hong-wei Sun, William E. Paul, John J. O’Shea<sup>#</sup>, Keji Zhao<sup>#</sup><br>
+<i><b>Immunity</b></i> 30, 155&ndash;167 (2009)
+</p></li><li><p>
+<a href="http://www.cell.com/cell-stem-cell/abstract/S1934-5909(08)00582-1" target="_blank">Chromatin signatures in multipotent hematopoietic stem cells indicate the fate of bivalent genes during differentiation</a><br>
+Kairong Cui*, <u>Chongzhi Zang</u>*, Tae-Young Roh, Dustin E. Schones, Richard W. Childs, Weiqun Peng, Keji Zhao<br>
+<i><b>Cell Stem Cell</b></i> 4, 80&ndash;93 (2009)
+</p></li><li><p>
+<a href="http://www.nature.com/ng/journal/v40/n7/full/ng.154.html" target="_blank">Combinatorial patterns of histone acetylations and methylations in the human genome</a><br>
+Zhibin Wang*, <u>Chongzhi Zang</u>*, Jeffrey A. Rosenfeld*, Dustin E. Schones, Artem Barski, Suresh Cuddapah, Kairong Cui, Tae-Young Roh, Weiqun Peng, Michael Q. Zhang, Keji Zhao<br>
+<i><b>Nature Genetics</b></i> 40, 897&ndash;903 (2008)
+</p></li></ol>
+<hr>
+<p align="right">Last modified: August 20, 2020</p>
+</div>
+
+</body></html>

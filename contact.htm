@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="default.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="ism/css/my-slider.css"/>
+<script src="ism/js/ism-2.2.min.js"></script>
+<script language="javascript" type="text/javascript">
+function update_modtime() {
+  var x = new Date(document.lastModified);
+  document.getElementById("last_mod").innerHTML="Last modified: "+x;
+}
+</script>
+<style>
+body {margin:0;}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 4px 20px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+<title>Chongzhi Zang Lab</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+<body bgcolor="white" onload="update_modtime();">
+<div style="width: 900px; margin: auto;">
+<img align="left" width="170" src="UVA-med-3.jpg">
+<img align="right" width="150" src="cphg_logo.jpg">
+<h2 style="font-size: 28pt" align="center"><a href="http://faculty.virginia.edu/zanglab" style="text-decoration:none;"><font color="#002F6C">Chongzhi Zang Lab&nbsp;&nbsp;</font></a></h2>
+
+<ul class="topnav" id="myTopnav">
+  <li><a href="index.htm">Home</a></li>
+  <li><a class="active" href="people.htm">People</a></li>
+  <li><a href="research.htm">Research</a></li>
+  <li><a href="publication.htm">Publications</a></li>
+  <li><a href="software.htm">Software</a></li>
+  <li><a href="teaching.htm">Teaching</a></li>
+  <li><a href="position.htm">Positions</a></li>
+  <li><a href="contact.htm">Contact</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+  </li>
+</ul>
+
+<!--<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+<div class="ism-slider" data-transition_type="fade" data-play_type="loop" id="home-slider">
+  <ol>
+    <li>
+      <img src="ism/image/slides/_u/1488566891987_67648.jpg">
+    </li>
+    <li>
+      <img src="ism/image/slides/_u/1488727852701_364381.jpg">
+    </li>
+    <li>
+      <img src="ism/image/slides/_u/1488567032192_666768.jpg">
+    </li>
+    <li>
+      <img src="ism/image/slides/_u/1488736436612_647904.png">
+    </li>
+  </ol>
+</div>
+-->
+<h2 align="center"><font color="#002F6C">Contact Information</font></h2>
+<hr>
+<iframe align="right" width="600" height="360" id="gmap_canvas" src="https://maps.google.com/maps?q=West%20Complex&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+<!--<img align="right" src="images/uva_ground2.jpg" style="width:600px">
+<iframe align="right" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2651.7458384953184!2d-78.5024211411241!3d38.03391727061369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b386464fed564b%3A0xa98042755a1e2ebf!2sWest+Complex%2C+Charlottesville%2C+VA+22903!5e0!3m2!1sen!2sus!4v1495693722225" width="600" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+-->
+<h3><font color="#002F6C">Mailing Address</font></h3>
+<p>
+<a href="https://med.virginia.edu/cphg/" target="_blank" style="text-decoration:none;">Center for Public Health Genomics</a><br>
+<a href="https://www.virginia.edu/" target="_blank" style="text-decoration:none;">University of Virginia</a><br>
+P. O. Box 800717<br>
+Charlottesville, VA 22908<br>
+U. S. A.
+</p>
+<h3><font color="#002F6C">Lab/Office Location</font></h3>
+<p>
+<a href="https://www.google.com/maps/dir//38.033306,-78.501216/@38.033522,-78.5055676,16z" target="_blank" style="text-decoration:none;">West Complex</a><br>
+6th Floor, Suite 6131<br>
+1300 Jefferson Park Avenue<br>
+Charlottesville, VA 22903
+</p><p>
+Phone: 434-243-5397<br>
+Fax: 434-982-1815<br>
+Email: <a href="mailto:zang@virginia.edu">zang@virginia.edu</a>
+</p><br>
+<hr>
+<h2 align="center"><font color="#002F6C">Affiliations</font></h2>
+<hr>
+<h4><a href="https://med.virginia.edu/cphg/" target="_blank" style="text-decoration:none;"><font color="#002F6C">Center for Public Health Genomics</font></a></h3>
+<h4><a href="https://med.virginia.edu/phs/" target="_blank" style="text-decoration:none;"><font color="#002F6C">Department of Public Health Sciences</font></a></h3>
+<h4><a href="https://bmg.med.virginia.edu/" target="_blank" style="text-decoration:none;"><font color="#002F6C">Department of Biochemistry and Molecular Genetics</font></a></h3>
+<h4><a href="https://engineering.virginia.edu/departments/biomedical-engineering" target="_blank" style="text-decoration:none;"><font color="#002F6C">Department of Biomedical Engineering</font></a></h3>
+<h4><a href="https://uvahealth.com/services/cancer-research" target="_blank" style="text-decoration:none;"><font color="#002F6C">UVA Cancer Center</font></a></h3>
+<h4><a href="https://datascience.virginia.edu/" target="_blank" style="text-decoration:none;"><font color="#002F6C">School of Data Science</font></a></h3>
+<hr>
+<p align="right">Last modified: January 14, 2020</p>
+</div>
+
+</body></html>

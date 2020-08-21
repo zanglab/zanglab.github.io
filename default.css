@@ -1,0 +1,30 @@
+#h1 {font-size: 16pt}
+#body { font-size: 12pt }
+#td {font-size: 14pt}
+#th {font-size: 16pt}
+h1 {font-size: 18pt;
+    font-family: arial, helvetica, sans-serif;
+    }
+h3 {font-size: 16 pt;
+    font-family: arial, helvetica, sans-serif;
+}
+body { background-color: white ; font-size: 12pt;
+    font-family: arial, helvetica, sans-serif;
+ }
+td {font-size: 12pt; text-align:left;
+    font-family: arial, helvetica, sans-serif;
+}
+th {font-size: 12pt;
+    font-family: arial, helvetica, sans-serif;
+}
+
+
+li {font-size: 12pt; margin-bottom: 12px;
+    margin-top: 12px;
+    font-family: arial, helvetica, sans-serif;
+}
+.tab { margin-left: 48px;}
+a {color:#000000; text-decoration: none}
+a.plain { text-decoration: none}
+a:visited {color:#000000; text-decoration:none;}
+a:hover {text-decoration:underline;}
