@@ -1,1 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="../default.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="ism/css/my-slider.css"/>
+<script src="../ism/js/ism-2.2.min.js"></script>
+<script language="javascript" type="text/javascript">
+function update_modtime() {
+  var x = new Date(document.lastModified);
+  document.getElementById("last_mod").innerHTML="Last modified: "+x;
+}
+</script>
+<style>
+body {margin:0;}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
 
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 4px 20px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+
+<title>BART</title>
+<link rel="shortcut icon" type="image/x-icon" href="http://faculty.virginia.edu/zanglab/bart/favicon.ico">
+</head>
+<body bgcolor="white" onload="update_modtime();" data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+<div style="width: 900px; margin: auto;">
+<!--<img align="left" width="170" src="UVA-med-3.jpg">-->
+<img align="left" width="135" src="./IMG_1651.png">
+<h2 style="font-size: 28pt"><a href="http://faculty.virginia.edu/zanglab/bart" style="text-decoration:none;"><font color="#002F6C">BART</font></a></h2>
+<h2><font color="#002F6C"><u>B</u>inding <u>A</u>nalysis for <u>R</u>egulation of <u>T</u>ranscription</font></h2>
+
+<ul class="topnav" id="myTopnav">
+  <li><a href="http://faculty.virginia.edu/zanglab/bart/index.htm">Home</a></li>
+  <li><a class="active" href="http://bartweb.org" target="_blank">Web</a></li>
+  <li><a href="http://faculty.virginia.edu/zanglab/bart/index.htm#download">Download</a></li>
+  <li><a href="http://faculty.virginia.edu/zanglab/bart/index.htm#install">Installation</a></li>
+  <li><a href="http://faculty.virginia.edu/zanglab/bart/index.htm#tutorial">Tutorial</a></li>
+  <li><a href="http://faculty.virginia.edu/zanglab/bart/index.htm#faq">FAQ</a></li>
+  <li><a href="http://faculty.virginia.edu/zanglab/bart/index.htm#citation">Citation</a></li>
+  <li><a href="http://faculty.virginia.edu/zanglab/bart/index.htm#contact">Contact</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+  </li>
+</ul>
+
+<br>
+<h3><font color="#002F6C">About BART</font></h3>
+<p>
+BART (<u>B</u>inding <u>A</u>nalysis for <u>R</u>egulation of <u>T</u>ranscription) is a bioinformatics tool for predicting functional transcriptional regulators (TRs) 
+that bind at cis-regulatory regions to regulate gene expression in human or mouse, taking a query gene set, a ChIP-seq dataset or a scored genomic region set as input.
+</p><p>
+BART leverages 7,968 human TR binding profiles and 5,851 mouse TR binding profiles from the public domain 
+(collected in <a href="http://cistrome.org/db" target="_blank">Cistrome Data Browser</a>) to make the prediction.
+</p><p>
+BART is implemented in Python and distributed as an open-source package along with necessary data libraries. 
+BART package is also available on <a href="https://github.com/zanglab/bart2" target="_blank">Github</a>.
+</p><p>
+BART is developed and maintained by the <a href="http://zanglab.org/" target="_blank">Chongzhi Zang Lab</a> at the University of Virginia.
+</p>
+
+<hr>
+<h3 id="bartweb"><a href="http://bartweb.org/" target="_blank"><font color="#002F6C">Web Interface (Beta)</font></a></h3>
+<p>
+BART web interface can be accessed <a href="http://bartweb.org/" target="_blank">here</a>.
+</p>
+<hr>
+<h3 id="download"><font color="#002F6C">Download</font></h3>
+<p>
+<b>BART Package</b></p>
+<p>
+Current version: 2.0, updated May 15, 2020
+</p>
+<p>
+<a href="http://faculty.virginia.edu/zanglab/bart/bart_v2.0.tar.gz"><font color="#002F6C">BART2.0 for Python3</font></a> – Source code only (need to download data library separately)
+<!-- <a href="bart_v2.0.tar.gz"><font color="#002F6C">BART v2.0 for Python3</font></a> – Source code only (need to download the data library separately) -->
+</p>
+
+<p><br>
+<b>BART Data Libraries</b></p>
+<p>
+The human genome hg38 and the mouse genome mm10 are supported. 
+</p>
+<p>
+<a href="http://faculty.virginia.edu/zanglab/bart/hg38_library.tar.gz"><font color="#002F6C">hg38 library</font></a>
+<br>
+<a href="http://faculty.virginia.edu/zanglab/bart/mm10_library.tar.gz"><font color="#002F6C">mm10 library</font></a>
+<!-- 
+<a href="hg38_library.tar.gz"><font color="#002F6C">hg38 library</font></a>
+<br>
+<a href="mm10_library.tar.gz"><font color="#002F6C">mm10 library</font></a>
+ -->
+</p>
+
+<p><br>
+<b>Supplementary Data</b></p>
+<p>
+The union DNaseI hypersensitive sites (UDHS) used in the BART model. (They are NOT required for BART installation.)
+</p>
+<p>
+<a href="http://faculty.virginia.edu/zanglab/bart/hg38_UDHS.bed.gz"><font color="#002F6C">hg38 UDHS</font></a>
+<br>
+<a href="http://faculty.virginia.edu/zanglab/bart/mm10_UDHS.bed.gz"><font color="#002F6C">mm10 UDHS</font></a>
+<br></p>
+
+<hr>
+<h3 id="install"><font color="#002F6C">Installation</font></h3>
+<p>
+<b>Prerequisites</b></p>
+<p>
+
+BART uses Python's distutils tools for source installation. Before installing BART, please make sure Python3 and the following python packages are installed. 
+We highly recommend the
+<a href="https://docs.anaconda.com/anaconda/install/"><font color="#002F6C">Anaconda environment</font></a>, 
+which include all the required python packages.
+
+</p>
+<p>
+</p><ul style="list-style-type:square; padding-left: 24px;"><li>
+<a href="https://pypi.python.org/pypi/setuptools" target="_blank">setuptools</a>
+</li><li>
+<a href="https://pypi.python.org/pypi/numpy" target="_blank">numpy</a>
+</li><li>
+<a href="https://pypi.python.org/pypi/pandas" target="_blank">pandas</a>
+</li><li>
+<a href="https://pypi.python.org/pypi/scipy" target="_blank">scipy</a>
+</li><li>
+<a href="https://pypi.python.org/pypi/tables" target="_blank">tables</a>
+</li><li>
+<a href="https://scikit-learn.org/stable/install.html" target="_blank">sklearn</a>
+</li><li>
+<a href="https://matplotlib.org/users/installing.html" target="_blank">matplotlib</a>
+</li></ul>
+<p></p>
+
+<p><br>
+<b>Download the source package and setup the configuration file</b> 
+</p>
+
+<p>
+You have to download the Human or Mouse Data Library under your own directory before install BART. 
+The unpacked libraries occupy 14GB hard drive storage in the download directory. 
+Please download from the link provided above or use the following command lines. 
+
+<p style="font-family:courier;padding-left:64px;">
+$ wget https://faculty.virginia.edu/zanglab/bart/hg38_library.tar.gz <br>
+$ wget https://faculty.virginia.edu/zanglab/bart/mm10_library.tar.gz
+
+
+<p>
+To install a source distribution of BART, unpack the distribution tarball and go to the directory where you unpacked BART. 
+</p>
+<p style="font-family:courier;padding-left:64px;">
+$ tar zxf bart_v2.0.tar.gz
+<br>
+$ cd bart_v2.0
+</p>
+
+<p>
+Modify the configure file <span style="font-family:courier">(bart2/bart.conf)</span>.
+For example, if you download the hg38_library.tar.gz (and/or mm10_library.tar.gz) and unpack it under /path/to/data, then you can modify the bart.conf file as:
+</p>
+<p style="font-family:courier;padding-left:64px;">
+[path] <br>
+hg38_library_dir = /path/to/data/ <br>
+mm10_library_dir = /path/to/data/
+</p>
+
+<p><br>
+<b>Global installation</b> 
+</p>
+
+<p>
+Install with root/administrator permission, or you have the
+<a href="https://docs.anaconda.com/anaconda/install/"><font color="#002F6C">Anaconda environment</font></a>
+prepared. By default, the script will install python library and executable codes globally.
+</p>
+<p style="font-family:courier;padding-left:64px;">
+$ python setup.py install
+</p>
+
+<p><br>
+<b>Local installation</b> 
+</p>
+
+<p>
+If you want to install everything under a specific directory, for example, a directory as /path/to/bart2/, use the following commands.
+</p>
+<p style="font-family:courier;padding-left:64px;">
+$ mkdir -p /path/to/bart2/lib/pythonX.Y/site-packages
+<br>
+$ export PYTHONPATH=/path/to/bart2/lib/pythonX.Y/site-packages/:$PYTHONPATH
+<br>
+$ python setup.py install --prefix /path/to/bart
+<br>
+$ export PATH=/path/to/bart2/bin/:$PATH
+</p>
+<p>
+In this value, X.Y stands for the major–minor version of Python you are using (such as 3.5; you can find this with sys.version[:3] from a Python command line).
+</p>
+<p>
+You’ll need to modify the environment variables and add those lines in your bash file (varies on each platform, usually is ~/.bashrc or ~/.bash_profile).
+</p>
+<p style="font-family:courier;padding-left:64px;">
+$ export PYTHONPATH=/path/to/bart2/lib/pythonX.Y/site-packages/:$PYTHONPATH
+<br>
+$ export PATH=/path/to/bart2/bin/:$PATH
+<br></p>
+
+
+<hr>
+<h3 id="tutorial"><font color="#002F6C">Tutorial</font></h3>
+<p>
+
+<b>Positional arguments</b>
+</p>
+<p style="font-family:courier;padding-left:64px;">
+{geneset,profile,region}
+</p>
+
+<br><b>bart2 geneset</b>
+<p>
+Given a query gene set in official gene symbols (HGNC for human or MGI for mouse) in text format (each gene in a row, at least 100 genes recommended), predict functional TRs that regulate these genes.
+</p>
+<em>Usage:</em>
+<p style="font-family:courier;padding-left:64px;">
+bart2 geneset -i genelist.txt -s hg38 --outdir bart2_output
+</p>
+
+
+<br>
+<b>bart2 profile</b>
+<p>
+Given a ChIP-seq data file (mapped reads in 
+<a href="http://samtools.github.io/hts-specs/SAMv1.pdf" target="_blank">BAM</a> 
+or 
+<a href="https://genome.ucsc.edu/FAQ/FAQformat#format1" target="_blank">BED</a> 
+format in either hg38 or mm10), predict TRs whose binding pattern associates with the input ChIP-seq profile.
+</p>
+<em>Usage:</em>
+<p style="font-family:courier;padding-left:64px;">
+bart2 profile -i ChIP.bam -f bam -s hg38 --outdir bart2_output
+</p>
+
+<br><b>bart2 region</b>
+<p>
+Given a scored genomic region set (<a href="https://genome.ucsc.edu/FAQ/FAQformat#format1" target="_blank">BED</a> format
+in either hg38 or mm10), predict TRs enriched in this genomic region set.
+
+</p>
+<em>Usage:</em>
+<p style="font-family:courier;padding-left:64px;">
+bart2 region -i ChIPpeak.bed -c 4 -s hg38 --outdir bart2_output
+</p>
+
+<p><br><b>
+Output files
+</b></p>
+<ol style="padding-left: 24px;">
+
+
+<p><span style="font-family:courier"> *_adaptive_lass_Info.txt</span> 
+provides regression information tells which representative H3K27ac samples are selected along with coefficients through adaptive lasso regression and sample annotations including cell line, cell type or tissue type. 
+This is the output only generated in geneset mode.
+</p>
+
+<p><span style="font-family:courier"> *_CRE_prediction_lasso.txt</span> 
+is the predicted cis-regulatory profile of the input gene set and is a ranked list of all CREs (UDHS) in the genome. The higher the score, the more likely the regulatory element regulates the input gene set.
+This is the output only generated in geneset mode.</p>
+
+<p><span style="font-family:courier"> *_auc.txt</span> 
+provides the association score of each of the TR ChIP-seq dataset with the genome cis-regulatory profile.
+</p>
+
+<p><span style="font-family:courier"> *_bart_results.txt</span>
+is a rank of all TRs with multiple quantification scores.  
+</p>
+
+<p>
+An example of BART2 output can be found <a href="http://bartweb.org/result?user_key=sample_15881335954485407" target="_blank">here</a>.
+</p></ol>
+
+<hr>
+<h3 id="faq"><font color="#002F6C">Frequently Asked Questions</font></h3>
+<!--<ol style="padding-left: 24px;">
+<li><p>
+
+What is BART?
+</p>
+<p>
+BART is an algorithm that can predict functional transcription factors for gene sets or ChIP-seq profiles. We’ll give a ranked list of all TFs, and the TFs that are involved in the regulation of the genes or associated with the input profile could just rank on the top! Want to know more? Download and try it!
+</p></li><li>
+<p>
+
+How can I install and run this software?
+</p>
+<p>Refer to Installation and Tutorial.
+</p></li><li>
+<p>
+
+How long will it take to run an analysis? How much memory will it occupy?
+</p>
+<p>For our AR_up_genes_enhancer_prediction.txt experiment in hg38 in test data, it will take BART about an hour and ~300M memory to complete the analysis on a 2.9 GHz computer, using the default parameter with 1 process.
+</p></ol>-->
+<p>
+Please sign up to <a href="https://groups.google.com/forum/#!forum/bartusers" target="_blank">BART users Google Group</a> for update announcements and discussions.
+
+</p>
+
+<hr>
+<h3 id="citation"><font color="#002F6C">Citation</font></h3>
+<p>
+</p>
+<p>
+If you use BART in your data analysis, please cite:</p>
+<p><a href="https://academic.oup.com/bioinformatics/advance-article-abstract/doi/10.1093/bioinformatics/bty194/4956015" target="_blank">BART: a transcription factor prediction tool with query gene sets or epigenomic profiles</a><br> 
+Zhenjia Wang, Mete Civelek, Clint Miller, Nathan Sheffield, Michael J. Guertin, Chongzhi Zang<br>
+<i><b>Bioinformatics</b></i> 34, 2867–2869 (2018)
+</p>
+<hr>
+<h3 id="contact"><font color="#002F6C">Contact</font></h3>
+<p>
+</p>
+<p>
+BART is developed and maintained by the <a href="http://zanglab.org" target="_blank">Chongzhi Zang Lab</a> at the University of Virginia. Please <a href="mailto:zang@virginia.edu">email us</a> for any questions. 
+</p>
+<hr>
+<p align="right">Last modified: May 16, 2020</p>
+</div>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=11654304; 
+var sc_invisible=1; 
+var sc_security="fa6267e9"; 
+</script>
+<script type="text/javascript" src="./BART_files/counter.js" async=""></script>
+<noscript><div class="statcounter"><a title="web counter"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11654304/0/fa6267e9/1/" alt="web
+counter"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+</body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
