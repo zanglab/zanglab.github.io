@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="../../default.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="ism/css/my-slider.css"/>
+<script language="javascript" type="text/javascript">
+function update_modtime() {
+  var x = new Date(document.lastModified);
+  document.getElementById("last_mod").innerHTML="Last modified: "+x;
+}
+
+
+</script>
+<style>
+body {margin:0;}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 6px 26px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+
+
+
+<title>Cancer CTCF data</title>
+<link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body bgcolor="white" onload="update_modtime();" data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+<div style="width: 900px; margin: auto">
+<!--<img align="left" width="170" src="UVA-med-3.jpg">-->
+<!-- <img align="left" width="135" src="./BART_files/IMG_1651.png"> -->
+<h2 style="font-size: 32pt"><a href="./index.html" style="text-decoration:none;"><font color="#002F6C">
+Caner-specific CTCF binding sites</font></a></h2>
+<!-- 
+<h2><font color="#002F6C">
+Cancer-specific CTCF binding facilitates oncogenic transcriptional dysregulation
+ -->
+</font></h2>
+
+
+<ul class="topnav" id="myTopnav">
+  <li><a href="./index.html">Home</a></li>
+  <li><a href="./index.html#citation">Citation</a></li>
+  <li><a href="./index.html#download">Download</a></li>
+  <li><a href="./index.html#links">Links</a></li>
+<!--   <li><a href="./index.html#contact">Contact</a></li> -->
+<!--   <li><a href="https://faculty.virginia.edu/zanglab/">Zanglab</a></li> -->
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+  </li>
+</ul>
+
+<br>
+<h3 style="font-size: 22pt"><font color="#002F6C">About the project</font></h3>
+
+<p style="line-height: 1.6;"> 
+We systematically analyzed 771 high-quality human CTCF ChIP-seq datasets (with at least 2000 peaks) from the public domain. These datasets cover over 200 human cell types, including normal tissues and multiple cancer types. We collectively identified 688,429 distinct CTCF binding sites by merging shared peaks called from each dataset. 
+<br><br>
+We assigned an occupancy score to each CTCF site by tallying the ChIP-seq datasets exhibiting peaks within the site. We obtained 285,467 high-confidence CTCF binding sites with occupancy score ≥ 3, and we identified 22,097 constitutive CTCF binding sites, which were defined as binding present in at least 80% of all 771 datasets determined by an empirical model. 
+<br><br>
+We identified cancer-specific CTCF binding patterns in six cancer types, including T-cell acute lymphoblastic leukemia (T-ALL), acute myeloid leukemia (AML), breast cancer (BRCA), colorectal cancer (CRC), lung cancer (LUAD) and prostate cancer (PRAD). We find that gain of CTCF binding in cancer associates with increased chromatin interactions and cancer-specific gene activation, while loss of CTCF binding occurred at promoters of genes present with lower expression in cancer compared to normal cells. Our results substantiate CTCF binding alteration as a functional epigenomic signature of cancer.
+
+<!-- 
+<br><br> 
+This work is collaborated by 
+<a href="https://faculty.virginia.edu/zanglab/" target="_blank">Chongzhi Zang</a> at University of Virginia and 
+<a href="https://www.ntziachristoslab.com/" target="_blank">Panagiotis Ntziachristos</a> at Northwestern University.
+ -->
+<br><br> 
+</p>
+
+
+
+
+<!-- CITATION SECTION -->
+<hr>
+<h3 style="font-size: 22pt" id="citation"><font color="#002F6C">Citation</font></h3>
+<p style="line-height: 1.6;">
+If you use any data from this website, please cite:
+<br><br>
+<a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02152-7" target="_blank">
+<b>Cancer-specific CTCF binding facilitates oncogenic transcriptional dysregulation</b></a><br> 
+Celestia Fang<sup>*</sup>, Zhenjia Wang<sup>*</sup>, Cuijuan Han, Stephanie L. Safgren, Kathryn A. Helmin, Emmalee R. Adelman, Valentina Serafin, Giuseppe Basso, Kyle P. Eagen, Alexandre Gaspar-Maia, Maria E. Figueroa, Benjamin D. Singer, Aakrosh Ratan, Panagiotis Ntziachristos<sup>#</sup>, Chongzhi Zang<sup>#</sup><br>
+<b><i> Genome Biology </i> 21,</b> 247 (2020) 
+</p><br>
+
+
+
+
+<!-- DOWNLOAD SECTION -->
+<hr>
+<h3 style="font-size: 22pt" id="download"><font color="#002F6C">Download</font></h3>
+
+<p><b>
+<li>Union of all CTCF binding sites (688,429)</li> 
+</b></p>
+<p style="padding-left: 48px;line-height: 2"> 
+<a href="./data/union_binding.bed"><font color="#002F6C">  BED format</font></a> 
+with chrom, start, end, id (hg38) <br> 
+<a href="./data/union_binding.csv"><font color="#002F6C">  CSV format</font></a> 
+with extra annotation (CTCF sequence motif, occupancy score, genomic annotation, etc.) <br> 
+</p><br> 
+
+
+<p><b>
+<li>High-conficence CTCF binding sites (285,467)</li> 
+</b></p>
+<p style="padding-left: 48px;line-height: 2"> 
+<a href="./data/union_binding_occupancy_score_GT3.bed"><font color="#002F6C">  BED format</font></a> 
+with chrom, start, end, id (hg38) <br> 
+<a href="./data/union_binding_occupancy_score_GT3.csv"><font color="#002F6C">  CSV format</font></a> 
+with extra annotation (CTCF sequence motif, occupancy score, genomic annotation, etc.) <br> 
+</p><br> 
+
+
+<p><b>
+<li>Constitutive CTCF binding sites (22,097)</li>
+</b></p>
+<p style="padding-left: 48px;line-height: 2"> 
+<a href="./data/union_binding_constitutive_0.8.bed"><font color="#002F6C">  BED format</font></a> 
+with chrom, start, end, id (hg38) <br> 
+<a href="./data/union_binding_constitutive_0.8.csv"><font color="#002F6C">  CSV format</font></a> 
+with extra annotation (CTCF sequence motif, occupancy score, genomic annotation, etc.) <br> 
+</p><br>
+
+
+<p><b>
+<li>Cancer-specific CTCF binding sites </li>
+</b></p>
+<p style="padding-left: 48px;line-height: 2;"> 
+<a href="./data/T-ALL_gained.csv"><font color="#002F6C"> T-ALL gained</font></a> &emsp;&emsp;
+<a href="./data/T-ALL_lost.csv"><font color="#002F6C">  T-ALL lost</font></a> <br>
+
+<a href="./data/AML_gained.csv"><font color="#002F6C"> AML gained</font></a> &emsp;&emsp;&ensp;
+<a href="./data/AML_lost.csv"><font color="#002F6C">  AML lost</font></a> <br>
+
+<a href="./data/BRCA_gained.csv"><font color="#002F6C"> BRCA gained</font></a> &emsp;&emsp;
+<a href="./data/BRCA_lost.csv"><font color="#002F6C">  BRCA lost</font></a> <br>
+
+<a href="./data/CRC_gained.csv"><font color="#002F6C"> CRC gained</font></a> &emsp;&emsp; &ensp;
+<a href="./data/CRC_lost.csv"><font color="#002F6C">  CRC lost</font></a> <br>
+
+<a href="./data/LUAD_gained.csv"><font color="#002F6C"> LUAD gained</font></a> &emsp;&emsp;
+<a href="./data/LUAD_lost.csv"><font color="#002F6C">  LUAD lost</font></a> <br>
+
+<a href="./data/PRAD_gained.csv"><font color="#002F6C"> PRAD gained</font></a> &emsp;&emsp;
+<a href="./data/PRAD_lost.csv"><font color="#002F6C">  PRAD lost</font></a> <br>
+
+</p><br>
+
+
+<p><b>
+<li>Other supplementary data</li>
+</b></p>
+<p style="padding-left: 48px;line-height: 2;"> 
+<a href="./data/TableS1_all_CTCF_ChIPseq.xlsx"><font color="#002F6C"> List of collected CTCF ChIP-seq datasets</font></a> <br>
+<a href="./data/TableS2_cancer_CTCF_ChIPseq.xlsx"><font color="#002F6C"> Lists of CTCF ChIP-seq datasets for identification of cancer-specific CTCF binding sites</font></a> 
+</p><br>
+
+<br>
+
+
+
+
+
+
+<!-- ADDITIONAL LINKS -->
+<hr>
+<h3 style="font-size: 22pt" id="links"><font color="#002F6C">Links</font></h3>
+<p>
+<li><a href="https://zanglab.github.io/index.htm" target="_blank">Zang lab</a></li><br> 
+<li><a href="https://www.ntziachristoslab.com/" target="_blank">Ntziachristos lab</a></li><br> 
+<li><a href="https://github.com/zanglab/CTCF_T-ALL_code" target="_blank"> Source code at GitHub </a></li><br> 
+</p>
+
+
+
+
+<!-- CONTACT SECTION -->
+<!-- 
+<hr>
+<h3 style="font-size: 22pt"  id="contact"><font color="#002F6C">Contact</font></h3>
+<p>
+Please <a href="mailto:zang@virginia.edu">email us</a> for any questions regarding the computational analysis. 
+</p><br>
+ -->
+
+
+<!-- MODIFICATION TIME -->
+<hr>
+<p align="right">Last modified: December 15, 2020<br>
+</p>
+
+</div>
+
+
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=11654304; 
+var sc_invisible=1; 
+var sc_security="fa6267e9"; 
+</script>
+<!-- <script type="text/javascript" src="./BART_files/counter.js" async=""></script> -->
+<noscript><div class="statcounter"><a title="web counter"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11654304/0/fa6267e9/1/" alt="web
+counter"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+</body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
+
