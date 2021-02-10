@@ -355,3 +355,12 @@ div.scrollmenu a {
 div.scrollmenu a:hover {
   background-color: #777;
 }
+
+img.logo
+{
+display:inline-block;
+margin-left:auto;
+margin-right:auto;
+width:400px;
+}
+#twoimages{text-align:center;}

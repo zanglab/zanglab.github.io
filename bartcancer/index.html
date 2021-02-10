@@ -10,7 +10,7 @@
 
 
 </head>
-<body onload="loadme()">
+<body onload="loadme(); onload2()">
 <div id="container">
   <div id="mainnav">
     <ul>
@@ -63,7 +63,7 @@
             <label><input type="radio" name="cancerType" value="THCA">Thyroid Carcinoma (THCA)</label><br />
             <label><input type="radio" name="cancerType" value="UCEC">Uterine Corpus Endometrial Carcinoma (UCEC)</label><br /><br />
           </div>
-            <p class="selectionHeader"><u>Select Differential Expression Type</u></p>
+            <p id="selectDEGtitle" class="selectionHeader"><u>Select Differential Expression Type</u></p>
             <label><input type="radio" name="DEGtype" value="up" checked>Up regulated in Cancer versus Normal</label><br />
             <label><input type="radio" name="DEGtype" value="down">Down regulated in Cancer versus Normal</label><br /><br />
           </form>
@@ -111,16 +111,8 @@
     </ul>
   </div>
   <div id="footer-contents">
-    <p id="footer-copy">Chongzhi Zang Lab 2020</p>
+    <p id="footer-copy">Chongzhi Zang Lab 2021</p>
   </div>
-
-  <!--
-   End of footer data
-
-</div>
-<div align=center>Chongzhi Zang Lab 2020</div>
--->
-
 
 </body>
 </html>
