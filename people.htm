@@ -64,17 +64,37 @@ ul.topnav li.icon {display: none;}
 .column {
     float: left;
 }
-.left, .right {
-  width: 46%;
+.left {
+  width: 16%;
 }
-.middle {
-  width: 8%;
+.right {
+  width: 84%;
 }
 /* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
     clear: both;
+}
+#alumni {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#alumni td, #alumni th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#alumni tr:nth-child(odd){background-color: #f2f2f2;}
+
+#alumni th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #e0e0e0;
+  color: #002F6C;
 }
 </style>
 <title>Chongzhi Zang Lab</title>
@@ -205,7 +225,7 @@ Qingying Chen joined the lab as a postdoctoral research associate in January 202
 </p><br>
 <p style="line-height: 1.6;">
 <img align="right" src="images/billy_lamberti.jpg" style="height:180px">
-<b>William F. Lamberti, PhD</b></p>
+<a href="https://www.billyflamberti.com" target="_blank"><b>William F. Lamberti, PhD</b></a></p>
 <p style="line-height: 1.6;">
 Email: <a href="mailto:william.f.lamberti@virginia.edu">william.f.lamberti@virginia.edu</a><br>
 </p><p style="width: 640px; line-height: 1.6;" align="left">
@@ -215,9 +235,9 @@ William Franz Lamberti received his B.A. in Mathematical Statistics from The Col
 <img align="right" src="images/yidan_cong.jpg" style="width:180px">
 <b>Yidan Cong, PhD</b></p>
 <p style="line-height: 1.6;">
-<!--Email: <a href="mailto:@virginia.edu">@virginia.edu</a><br>-->
+Email: <a href="mailto:npa4cn@virginia.edu">npa4cn@virginia.edu</a><br>
 </p><p style="width: 640px; line-height: 1.6;" align="left">
-Yidan Cong will be joining the lab as a postdoctoral research associate in June 2021. She received her PhD in chemistry from the University of North Carolina at Chapel Hill, M.S. in data science from Northwestern University, and B.S. in chemistry from Carnegie Mellon University. Her PhD research focused on synthesizing and characterizing supersoft materials that mimic biological tissues’ mechanical and optical properties, as well as developing computational tools to quantitatively correlate materials’ structure and properties. She is excited about utilizing machine learning algorithms to tackle challenging genomics research problems.
+Yidan Cong joined the lab as a postdoctoral research associate in June 2021. She received her PhD in chemistry from the University of North Carolina at Chapel Hill, M.S. in data science from Northwestern University, and B.S. in chemistry from Carnegie Mellon University. Her PhD research focused on synthesizing and characterizing supersoft materials that mimic biological tissues’ mechanical and optical properties, as well as developing computational tools to quantitatively correlate materials’ structure and properties. She is excited about utilizing machine learning algorithms to tackle challenging genomics research problems.
 </p><br>
 <hr>
 <h3><font color="#002F6C">Graduate Students</font></h3>
@@ -238,6 +258,16 @@ Office: West Complex, Room 6131<br>
 Email: <a href="mailto:hz9fq@virginia.edu">hz9fq@virginia.edu</a><br>
 </p><p style="width: 640px; line-height: 1.6;" align="left">
 Hongpan Zhang is a research specialist in the lab and will be a PhD student in the Biomedical Sciences (BIMS) program starting 2021. He obtained two bachelor's degrees in life sciences and software engineering from Sichuan University. Hongpan is keen to study the connection between genomic phenomena and diseases. He hopes to raise his knowledge of biological issues in his research work. Hongpan is a basketball fan and also loves other sports events. He's interested in historical knowledge as well.
+</p><br>
+<hr>
+<h3><font color="#002F6C">Research Volunteer</font></h3>
+<p style="line-height: 1.6;">
+<img align="right" src="images/ruoyao_shi.jpg" style="width:180px">
+<b>Ruoyao Shi</b></p>
+<p style="line-height: 1.6;">
+Email: <a href="mailto:rs8cp@virginia.edu">rs8cp@virginia.edu</a><br>
+</p><p style="width: 640px; line-height: 1.6;" align="left">
+Ruoyao Shi is a graduate student in biostatistics at the University of Michigan. She received her B.S. in biology from Tang Aoqing Honors Program in Biological Science, Jilin University, China. She joined the lab as a visiting undergraduate student in 2019, and continued doing research with the lab during graduate studies. She is enthusiastic about biostatistics and biological big data analysis, and is also interested in volunteer service, music and art in her spare time.
 </p><br>
 <hr>
 <h3><font color="#002F6C">Undergraduate Students</font></h3>
@@ -432,137 +462,229 @@ Sydney Saviano is an undergraduate student (Class or 2024) from Westchester, New
 </p><br>
 <hr>
 <h3><font color="#002F6C">Lab Alumni</font></h3>
+<!--<h4><font color="#002F6C">Postdoctoral Associates</font></h4>
+<table id="alumni">
+	<tr>
+		<th>Name</th>
+		<th>Background</th>
+		<th>Time at Lab</th>
+		<th>Current Position</th>
+	</tr>
+	<tr>
+		<td><b>Christopher Dampier, MD</b></td>
+		<td>MD, University of Michigan;<br>General Surgery Residency, University of Virginia</td>
+		<td>07/2019&ndash;05/2021</td>
+		<td>Pathology Fellow, National Cancer Institute, NIH</td>
+	</tr>
+</table>
+<br>-->
 <h4><font color="#002F6C">Graduate Students</font></h4>
-<ul style="list-style-type:disc; padding-left: 16px; line-height: 1.6;"><p>
-<li>
-	<b>Yushan (Brandon) Feng</b><br>
-	(04/2018&ndash;05/2019) Undergraduate/Master Student in Statistics/Computer Science<br>
-	Current Position: PhD Student in Computer Science, University of Maryland, College Park
-</li>
-<li>
-	<b>Jiangxue Han</b><br>
-	(07/2018&ndash;08/2019) Master Student in Data Science<br>
-	Current Position: Capital One<br>
-</li>
-<li>
-	<b>Seung Hyun (Andrew) Lee</b><br>
-	(09/2018&ndash;05/2019) Undergraduate/Master Student in Statistics<br>
-	Current Position: Associate at Wells Fargo<br>
-</li>
-<li>
-	<b>Jamel Simpson</b><br>
-	(01/2021&ndash;02/2021) Rotation PhD Student<br>
-	Current Position: PhD Student in Biomedical Sciences (BIMS), UVA<br>
-</li>
-<li>
-	<b>Wuwei Tan</b><br>
-	(05/2017&ndash;05/2018) Master Student in Statistics<br>
-	Current Position: PhD Student in Electrical and Computer Engineering, Texas A&M University
-</li>
-<li>
-	<b>Jose Verdezoto</b><br>
-	(10/2020&ndash;11/2020) Rotation PhD Student<br>
-	Current Position: PhD Student in Biomedical Sciences (BIMS), UVA<br>
-</li>
-<li>
-	<b>Yifan Zhang</b><br>
-	(08/2018&ndash;12/2019) Graduate Student in Biomedical Engineering
-</li>
-</p></ul>
+<table id="alumni">
+	<tr>
+		<th>Name</th>
+		<th>Program</th>
+		<th>Time at Lab</th>
+		<th>Current Position</th>
+	</tr>
+	<tr>
+		<td><a href="https://brandonyfeng.github.io" target="_blank"><b>Yushan (Brandon) Feng</b></a></td>
+		<td>BA/MS in Computer Science/Statistics</td>
+		<td>04/2018&ndash;05/2019</td>
+		<td>PhD Student in Computer Science, University of Maryland, College Park</td>
+	</tr>
+	<tr>
+		<td><b>Jiangxue Han</b></td>
+		<td>MS in Data Science</td>
+		<td>07/2018&ndash;08/2019</td>
+		<td>Capital One</td>
+	</tr>
+	<tr>
+		<td><b>Seung Hyun (Andrew) Lee</b></td>
+		<td>BA/MS in Statistics</td>
+		<td>09/2018&ndash;05/2019</td>
+		<td>Associate at Wells Fargo</td>
+	</tr>
+	<tr>
+		<td><b>Jamel Simpson</b></td>
+		<td>PhD in Biomedical Sciences (BIMS) (Rotation)</td>
+		<td>01/2021&ndash;02/2021</td>
+		<td>PhD Student in BIMS, UVA</td>
+	</tr>
+	<tr>
+		<td><b>Wuwei Tan</b></td>
+		<td>MS in Statistics</td>
+		<td>05/2017&ndash;05/2018</td>
+		<td>PhD Student in Electrical and Computer Engineering, Texas A&M University</td>
+	</tr>
+	<tr>
+		<td><b>Jose Verdezoto</b></td>
+		<td>PhD in Biomedical Sciences (BIMS) (Rotation)</td>
+		<td>10/2020&ndash;11/2020</td>
+		<td>PhD Student in BIMS, UVA</td>
+	</tr>
+	<tr>
+		<td><b>Yifan Zhang</b></td>
+		<td>MS in Biomedical Engineering</td>
+		<td>08/2018&ndash;12/2019</td>
+		<td></td>
+	</tr>
+</table>
+<br>
 <h4><font color="#002F6C">Undergraduate Students</font></h4>
-<ul style="list-style-type:disc; padding-left: 16px; line-height: 1.6;"><p>
-<li>
-	<b>Yayi Feng</b><br>
-	(09/2017&ndash;05/2020) Biology Major, Class of 2020<br>
-	<!--Current Position: Data Analyst at GSK-->
-</li>
-<li>
-	<b>Aaron Ho</b><br>
-	(10/2018&ndash;05/2020) Biochemistry and Computer Science Major, Class of 2020<br>
-	<!--Current Position: Data Analyst at GSK-->
-</li>
-<li>
-	<b>Zhou Lu</b><br>
-	(04/2018&ndash;05/2020) Statistics and Economics Major, Class of 2020<br>
-	Current Position: Graduate Student in Statistics, Carnegie Mellon University
-</li>
-<li>
-	<b>Naifei Pan</b><br>
-	(04/2018&ndash;02/2019) Statistics Major, Class of 2019<br>
-	Current Position: Data Analyst at GSK
-</li>
-<li>
-	<b>Sophie Park</b><br>
-	(01/2019&ndash;08/2019) Biochemistry and Music Major, Class of 2021<br>
-	Current Position: Undergraduate Student, UVA
-</li>
-<li>
-	<b>Stephany Perez-Rojas</b><br>
-	(01/2018&ndash;08/2019) Statistics Major, Class of 2020<br>
-	Current Position: Graduate Student in Statistics, UVA
-</li>
-<li>
-	<b>Sekou Rowe</b><br>
-	(05/2019&ndash;08/2019) Summer Student, <a href="https://www.nsfreu.org/howtoapply/engineering" target="_blank">NSF REU</a> Program in <a href="https://engineering.virginia.edu/departments/biomedical-engineering/academics/training-programs/systems-bioengineering-reu" target="_blank">Multi-Scale Systems Bioengineering</a><br>
-	Current Position: Undergraduate Student in Chemical Engineering, Howard University
-</li>
-<li>
-	<b>Allison Ryu</b><br>
-	(09/2018&ndash;12/2018) Computer Science Major, Class of 2021<br>
-	Current Position: Undergraduate Student, UVA
-</li>
-<li>
-	<b>Celina Shih</b><br>
-	(05/2017&ndash;07/2017) Summer Research Intern, Undergraduate Student in Biomedical Engineering, Johns Hopkins University<br>
-	Current Position: Bioinformatician, Johns Hopkins University Applied Physics Laboratory
-</li>
-<li>
-	<b>Jeffrey Yoo</b><br>
-	(02/2018&ndash;05/2020) Computer Science Major, Class of 2020<br>
-	Current Position: Graduate Student in Computer Science, UVA
-</li>
-</p></ul>
+<table id="alumni">
+	<tr>
+		<th>Name</th>
+		<th>Major</th>
+		<th>Time at Lab</th>
+		<th>Position after graduation</th>
+	</tr>
+	<tr>
+		<td><b>Yayi Feng</b></td>
+		<td>Biology</td>
+		<td>09/2017&ndash;05/2020</td>
+		<td>MS Student in Data Science, UVA</td>
+	</tr>
+	<!--<tr>
+		<td><b>Megan Grieco</b></td>
+		<td>Systems and Information Engineering</td>
+		<td>02/2019&ndash;05/2021</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><b>Alex Hickman</b></td>
+		<td>Biomedical Engineering</td>
+		<td>07/2020&ndash;05/2021</td>
+		<td></td>
+	</tr>-->
+	<tr>
+		<td><b>Aaron Ho</b></td>
+		<td>Biochemistry and Computer Science</td>
+		<td>10/2018&ndash;05/2020</td>
+		<td>Capital One</td>
+	</tr>
+	<tr>
+		<td><b>Zhou Lu</b></td>
+		<td>Statistics and Economics</td>
+		<td>04/2018&ndash;05/2020</td>
+		<td>MS Student in Statistics, Carnegie Mellon University</td>
+	</tr>
+	<tr>
+		<td><b>Naifei Pan</b></td>
+		<td>Statistics</td>
+		<td>04/2018&ndash;02/2019</td>
+		<td>Data Analyst at GSK</td>
+	</tr>
+	<tr>
+		<td><b>Sophie Park</b></td>
+		<td>Biochemistry and Music</td>
+		<td>01/2019&ndash;08/2019</td>
+		<td>Postbac IRTA Research Fellow, NIH</td>
+	</tr>
+	<tr>
+		<td><b>Stephany Perez-Rojas</b></td>
+		<td>Statistics</td>
+		<td>01/2018&ndash;08/2019</td>
+		<td>MS Student in Statistics, UVA</td>
+	</tr>
+	<!--<tr>
+		<td><b>Xinyue Qiu</b></td>
+		<td>Biology and Statistics</td>
+		<td>04/2019&ndash;05/2021</td>
+		<td>MS Student in Computational Biology, Carnegie Mellon University</td>
+	</tr>-->
+	<tr>
+		<td><b>Sekou Rowe</b></td>
+		<td><a href="https://engineering.virginia.edu/departments/biomedical-engineering/academics/training-programs/systems-bioengineering-reu" target="_blank">NSF REU</a> Summer Student; Chemical Engineering, Howard University</td>
+		<td>05/2019&ndash;08/2019</td>
+		<td>Undergrad Student in Chemical Engineering, Howard University</td>
+	</tr>
+	<tr>
+		<td><b>Allison Ryu</b></td>
+		<td>Computer Science</td>
+		<td>09/2018&ndash;12/2018</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><b>Celina Shih</b></td>
+		<td>Summer Research Intern; Biomedical Engineering, Johns Hopkins University</td>
+		<td>05/2017&ndash;08/2017</td>
+		<td>Bioinformatician, Johns Hopkins University Applied Physics Laboratory</td>
+	</tr>
+	<!--<tr>
+		<td><b>Zachary V. Thomas</b></td>
+		<td>Biomedical Engineering</td>
+		<td>05/2019&ndash;05/2021</td>
+		<td>PhD Student in Biomedical Engineering, University of Southern California</td>
+	</tr>-->
+	<tr>
+		<td><a href="https://jinyongyoo.github.io/" target="_blank"><b>Jin Yong (Jeffrey) Yoo</b></a></td>
+		<td>Computer Science</td>
+		<td>02/2018&ndash;05/2020</td>
+		<td>MS Student in Computer Science, UVA</td>
+	</tr>
+</table>
+<br>
 <h4><font color="#002F6C">Research Assistants</font></h4>
-<ul style="list-style-type:disc; padding-left: 16px; line-height: 1.6;"><p>
-<li>
-	<a href="https://marvinquiet.github.io/" target="_blank"><b>Wenjing Ma</b></a><br>
-	(08/2018&ndash;06/2019) MS in Computer Science, Beijing University of Posts and Telecommunications<br>
-	Current Position: PhD Student in Computer Science and Informatics (CSI), Emory University
-</li>
-<li>
-	<b>Yiren Wang</b><br>
-	(07/2017&ndash;06/2018) BS in Astronomy, Peking University<br>
-	Current Position: Graduate Student in Statistics, Columbia University
-</li>
-</p></ul>
+<table id="alumni">
+	<tr>
+		<th>Name</th>
+		<th>Background</th>
+		<th>Time at Lab</th>
+		<th>Current Position</th>
+	</tr>
+	<tr>
+		<td><a href="https://marvinquiet.github.io/" target="_blank"><b>Wenjing Ma</b></a></td>
+		<td>MS in Computer Science, Beijing University of Posts and Telecommunications</td>
+		<td>08/2018&ndash;06/2019</td>
+		<td>PhD Student in Computer Science and Informatics (BMI track), Emory University</td>
+	</tr>
+	<tr>
+		<td><b>Yiren Wang</b></td>
+		<td>BS in Astronomy, Peking University</td>
+		<td>07/2017&ndash;06/2018</td>
+		<td>Graduate Student in Statistics, Columbia University</td>
+	</tr>
+</table>
+<br>
 <h4><font color="#002F6C">Visting Scholars and Students</font></h4>
-<ul style="list-style-type:disc; padding-left: 16px; line-height: 1.6;"><p>
-<li>
-	<b>Gang Chen, MD, PhD</b><br>
-	(09/2018&ndash;08/2019) Visting Scholar<br>
-	Current Position: Professor of Molecular Pathology, First Affiliated Hospital of Guangxi Medical University
-</li>
-<li>
-	<b>Rongquan He, MD</b><br>
-	(03/2018&ndash;02/2019) PhD Candidate, Guangxi Medical University<br>
-	Current Position: Oncologist, Guangxi Medical University First Hospital
-</li>
-<li>
-	<b>Qi Li</b><br>
-	(01/2018&ndash;02/2018, 03/2019) PhD Candidate in Statistics, Tsinghua University<br>
-	Current Position: PhD Candidate in Statistics, Tsinghua University
-</li>
-<li>
-	<b>Wen Shen</b><br>
-	(02/2018&ndash;05/2018) Undergraduate Student in Biological Sciences, Nanjing University<br>
-	Current Position: Graduate Student in Biomedical Informatics, Columbia University
-</li>
-<li>
-	<b>Ruoyao Shi</b><br>
-	(10/2019&ndash;05/2020) Undergraduate Student in Tao Aoqing Honors Program in Biology Science, Jilin University<br>
-	Current Position: Graduate Student in Biostatistics, University of Michigan
-</li>
-</p></ul>
+<table id="alumni">
+	<tr>
+		<th>Name</th>
+		<th>Primary Position</th>
+		<th>Time at Lab</th>
+		<th>Current Position (if different)</th>
+	</tr>
+	<tr>
+		<td><b>Gang Chen, MD, PhD</b></td>
+		<td>Professor of Molecular Pathology, First Affiliated Hospital of Guangxi Medical University</td>
+		<td>09/2018&ndash;08/2019</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><b>Rongquan He, MD</b></td>
+		<td>PhD Student, Guangxi Medical University</td>
+		<td>03/2018&ndash;02/2019</td>
+		<td>Oncologist, Guangxi Medical University First Hospital</td>
+	</tr>
+	<tr>
+		<td><b>Qi Li</b></td>
+		<td>PhD Student in Statistics, Tsinghua University</td>
+		<td>01/2018&ndash;02/2018, 03/2019</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><b>Wen Shen</b></td>
+		<td>Undergraduate Student in Biological Sciences, Nanjing University</td>
+		<td>02/2018&ndash;05/2018</td>
+		<td>Graduate Student in Biomedical Informatics, Columbia University</td>
+	</tr>
+	<!--<tr>
+		<td><b>Ruoyao Shi</b></td>
+		<td>Undergraduate Student in Tao Aoqing Honors Program in Biology Science, Jilin University</td>
+		<td>10/2019&ndash;05/2020</td>
+		<td>Graduate Student in Biostatistics, University of Michigan</td>
+	</tr>-->
+</table>
 <br>
 <hr>
 <h3><font color="#002F6C">We are recruiting!</font></h3>
@@ -571,7 +693,7 @@ Sydney Saviano is an undergraduate student (Class or 2024) from Westchester, New
 <p style="line-height: 1.6;">The Zang lab is recruiting motivated students and scholars to work on various topics in computational biology in a collaborative research team. Postdocs, graduate and undergraduate students are all welcome. Please visit <a href="position.htm">Positions</a> page for details.
 </p>
 <hr>
-<p align="right">Last modified: May 17, 2021</p>
+<p align="right">Last modified: May 28, 2021</p>
 
 </div>
 
