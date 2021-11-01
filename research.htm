@@ -135,36 +135,35 @@ function myFunction() {
 The research in the lab focuses on two aspects: 1) developing quantitative models and computational methods for analyzing high-throughput data generated from emerging genomics technologies; and 2) using innovative computational and data science approaches to study epigenetics and transcriptional regulation of gene expression in mammalian cell systems and human diseases such as cancer.
 </p>
 <p style="line-height: 1.6;">
-How gene expression is regulated in chromatin is a fundamental question in molecular biology. The transcriptional program is a major determinant of cell identity; its dysregulation is involved in many diseases, including cancer. High-throughput genomics technologies enable us to obtain massive data measuring numerous factors and elements in the genome that affect chromatin states and gene regulation. We leverage big data and conduct computational research at the intersection of functional genomics, epigenetics, and cancer biology. Some research directions include:
+How gene expression is regulated in chromatin is a fundamental question in molecular biology. The transcriptional program is a major determinant of cell identity; its dysregulation is involved in many diseases, including cancer. High-throughput genomics technologies enable us to obtain massive data measuring numerous factors and elements in the genome that affect chromatin states and gene regulation. We leverage big data and conduct computational research at the intersection of functional genomics, epigenetics, and cancer biology. Several ongoing research directions include:
 </p>
 <br>
-<h3><font color="#002F6C">1. <i>Next-generation sequencing bioinformatics</i></font></h2>
+<h3><font color="#002F6C">1. <i>Bioinformatics methods for emerging omics technologies</i></font></h2>
 <img align="right" src="images/sicer.jpg" style="width:240px">
 <p style="width: 620px; line-height: 1.6;">
-We are interested in developing innovative statistical methods and new algorithms for analyzing massive data from next-generation sequencing (NGS) coupled with various assays for studying genomic chromatin profiles, such as ChIP-seq for transcription factor and histone modification profiling, ATAC-seq and DNase-seq for chromatin accessibility profiling, etc. As a pioneer in ChIP-seq bioinformatics, we developed SICER (<a href="https://academic.oup.com/bioinformatics/article/25/15/1952/212783" target="_blank"><i>Bioinformatics</i> 2009</a>), one of the most widely used methods for ChIP-seq data analysis with exceptional performance for board histone marks. We are developing novel quantitative models for analyzing DNase/ATAC-seq data and for studying chromatin dynamics at both population and single-cell levels.
+Modern development of life sciences has been accelerated by new technologies. Innovative analytics methods are essential for converting high-throughput experimental data into scientific knowledge. We are interested in developing innovative statistical models and algorithms for analyzing data from emerging genomics technologies. As a pioneer in next-generation sequencing (NGS) bioinformatics, we developed SICER (<a href="https://academic.oup.com/bioinformatics/article/25/15/1952/212783" target="_blank"><i>Bioinformatics</i> 2009</a>), one of the most widely used methods for ChIP-seq data analysis. We are currently developing new methods for unbiased analysis of data from epigenomics (ATAC-seq, CUT&RUN, CUT&Tag, etc.), single-cell multi-omics, and spatial omics techniques to study gene regulation.
+</p>
+<br>
+<h3><font color="#002F6C">2. <i>Machine learning methods for regulatory factor prediction and multi-omics integration</i></font></h2>
+<img align="right" src="images/margebart.jpg" style="width:240px">
+<p style="width: 620px; line-height: 1.6;">
+Transcriptional regulators (TRs, including transcription factors and chromatin regulators) are key players in transcriptional regulation. Leveraging publicly available ChIP-seq data, we developed a series of machine learning-based computational methods for predicting cis-regulatory profile and functional TRs from a variety of input data types, including MARGE (<a href="http://genome.cshlp.org/content/26/10/1417" target="_blank"><i>Genome Res</i> 2016</a>), BART (<a href="https://academic.oup.com/bioinformatics/article/34/16/2867/4956015" target="_blank"><i>Bioinformatics</i> 2018</a>), BARTweb (<a href="https://academic.oup.com/nargab/article/3/2/lqab022/6219159" target="_blank"><i>NAR Genom Bioinform</i> 2021</a>), and BART3D (<a href="https://academic.oup.com/bioinformatics/article/37/18/3075/6171180" target="_blank"><i>Bioinformatics</i> 2021</a>). To make the functional prediction information better accessible to the community, we curated <a href="bartcancer" target="_blank">BART Cancer</a> to display multi-omics integration results for the Cancer Genome Atlas (TCGA), including BART-predicted TRs from TCGA RNA-seq data (<a href="https://academic.oup.com/narcancer/article/3/1/zcab011/6180061" target="_blank"><i>NAR Cancer</i> 2021</a>). We are developing new methods specifically for single-cell data, and will adopt advanced machine learning algorithms to further develop a general cell-type-independent model for multi-omics integration and regulatory network prediction.
+</p>
+<br>
+<h3><font color="#002F6C">3. <i>Data-inspired modeling for functional epigenetics and transcriptional condensation</i></font></h2>
+<img align="right" src="images/ctcf.jpg" style="width:240px">
+<p style="width: 620px; line-height: 1.6;">
+Data-driven discovery has become a new paradigm of biological research. By modeling massive data available in the public domain, we can find new patterns and new relationships in biological entities that are usually unseen from individual datasets. Integrating thousands of public omics datasets, we recently identified a cancer-specific binding pattern of CTCF, an important DNA-binding protein, and characterized its function in facilitating oncogenic transcriptional activation (<a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02152-7" target="_blank"><i>Genome Biol</i> 2020</a>). Inspired by emerging evidence of phase separation phenomena in gene regulation (e.g., <a href="https://www.nature.com/articles/s41586-021-03903-7" target="_blank"><i>Nature</i> 2021</a>), we will develop computational models to characterize phase-separated transcriptional condensation events from multi-omics data, with the ultimate goal of better understanding fundamental mechanisms of transcriptional regulation.<br>
 </p>
 <br><br>
-<h3><font color="#002F6C">2. <i>Chromatin, epigenetics, and transcriptional regulation</i></font></h2>
-<img align="right" src="images/marge.jpg" style="width:240px">
-<p style="width: 620px; line-height: 1.6;">
-Our ultimate goal is to understand the fundamental mechanisms in transcriptional regulation and the functions of chromatin. We characterized dozens of histone modifications and histone modifying enzymes at the genomic scale (<a href="http://www.nature.com/ng/journal/v40/n7/full/ng.154.html" target="_blank"><i>Nat Genet</i> 2008</a>, <a href="http://www.nature.com/ng/journal/v41/n8/full/ng.409.html" target="_blank"><i>Nat Genet</i> 2009</a>, <a href="http://www.cell.com/abstract/S0092-8674(09)00841-1" target="_blank"><i>Cell</i> 2009</a>, <a href="http://www.cell.com/cell-stem-cell/abstract/S1934-5909(08)00582-1" target="_blank"><i>Cell Stem Cell</i> 2009</a>). Leveraging the large amount of publicly available ChIP-seq data, we developed several computational methods, including MARGE (<a href="http://genome.cshlp.org/content/26/10/1417" target="_blank"><i>Genome Res</i> 2016</a>) and BART (<a href="https://academic.oup.com/bioinformatics/advance-article-abstract/doi/10.1093/bioinformatics/bty194/4956015" target="_blank"><i>Bioinformatics</i> 2018</a>), for predicting cis-regulatory elements and transcriptional regulators from differentially expressed gene sets using integrative learning approaches. We are specifically interested in studying functional enhancer regulation of gene expression in the high-order dynamic structure of chromatin in cancer and immune systems.
-</p>
-<br><br>
-<h3><font color="#002F6C">3. <i>Genomic data integration for global regulatory networks</i></font></h2>
-<img align="right" src="images/mancie.jpg" style="width:240px">
-<p style="width: 620px; line-height: 1.6;">
-High-dimensional genomic data analysis is challenging because of noises and biases in high-throughput experiments. We developed MANCIE (<a href="http://www.nature.com/articles/ncomms11305" target="_blank"><i>Nat Commun</i> 2016</a>), a method for bias correction and data integration of cross-platform genomic profiles on the same samples, using a Bayesian-supported principal component analysis (PCA)-based approach. We are interested in using statistical modeling and innovative data science approaches to integrate public multi-omics data for characterizing physical properties of mammalian chromatin structures and dynamic interactions between chromatin and DNA in human cell systems.
-</p>
-<br><br><br>
 <hr>
 <h3><font color="#002F6C">Collaborations</font></h3>
-<p style="line-height: 1.6;">Computational biology is an interdisciplinary science. It cannot thrive without close collaborations between researchers with different backgrounds and expertise. We have established a collaborative research team and a cross-disciplinary environment in the lab, and we always commit to collaborations and team science on a variety of research projects with experimental biologists, clinicians, as well as statisticians, computer scientists, mathematicians, and physicists.</p>
+<p style="line-height: 1.6;">Computational biology is an interdisciplinary science. It cannot thrive without close collaboration between researchers with different backgrounds and expertises. We have established a collaborative team and a cross-disciplinary environment in the lab, and we always commit to collaborations and team science on a variety of research projects with experimental biologists, clinicians, as well as statisticians, computer scientists, mathematicians, and physicists.</p>
 <p style="line-height: 1.6;">Our collaborators include:
 </p>
 <ul style="list-style-type:disc; padding-left: 24px; line-height: 1.6;"><p>
 <li><a href="https://med.virginia.edu/faculty/faculty-listing/gc8r/" target="_blank"><font color="#002F6C">Graham Casey</font></a>, Center for Public Health Genomics, University of Virginia</li>
 <li><a href="https://med.nyu.edu/faculty/suresh-cuddapah" target="_blank"><font color="#002F6C">Suresh Cuddapah</font></a>, Department of Environmental Medicine, New York University</li>
-<li><a href="http://www.stat.tsinghua.edu.cn/en/teambuilder/faculty/ke-deng/" target="_blank"><font color="#002F6C">Ke Deng</font></a>, Center for Statistical Science, Tsinghua University</li>
 <li><a href="https://dutta-labwebsite.github.io/" target="_blank"><font color="#002F6C">Anindya Dutta</font></a>, Department of Genetics, University of Alabama at Birmingham</li>
 <li><a href="https://med.virginia.edu/faculty/faculty-listing/fg5q/" target="_blank"><font color="#002F6C">Francine Garrett-Bakelman</font></a>, Department of Biochemistry and Molecular Genetics, University of Virginia</li>
 <li><a href="http://guertinlab.org/" target="_blank"><font color="#002F6C">Michael J. Guertin</font></a>, Department of Genetics and Genome Sciences, University of Connecticut</li>
@@ -173,7 +172,6 @@ High-dimensional genomic data analysis is challenging because of noises and bias
 <li><a href="https://uvahealth.com/findadoctor/profile/li-li" target="_blank"><font color="#002F6C">Li Li</font></a>, Department of Family Medicine, University of Virginia</li>
 <li><a href="http://millerlab.org/" target="_blank"><font color="#002F6C">Clint L. Miller</font></a>, Center for Public Health Genomics, University of Virginia</li>
 <li><a href="https://med.virginia.edu/faculty/faculty-listing/gm7sj/" target="_blank"><font color="#002F6C">Golam Mohi</font></a>, Department of Biochemistry and Molecular Genetics, University of Virginia</li>
-<li><a href="http://www.ntziachristoslab.com/" target="_blank"><font color="#002F6C">Panagiotis Ntziachristos</font></a>, Department of Biochemistry and Molecular Genetics, Northwestern University</li>
 <li><a href="https://med.virginia.edu/faculty/faculty-listing/ar7jq/" target="_blank"><font color="#002F6C">Aakrosh Ratan</font></a>, Center for Public Health Genomics, University of Virginia</li>
 <li><a href="https://campuspress.yale.edu/wanglab/" target="_blank"><font color="#002F6C">Siyuan Steven Wang</font></a>, Department of Genetics, Yale University</li>
 <li><a href="https://med.virginia.edu/yuh-hwa-wang-lab/" target="_blank"><font color="#002F6C">Yuh-Hwa Wang</font></a>, Department of Biochemistry and Molecular Genetics, University of Virginia</li>
@@ -219,7 +217,7 @@ High-dimensional genomic data analysis is challenging because of noises and bias
 </div>
 </div>
 <hr>
-<p align="right">Last modified: August 11, 2021</p>
+<p align="right">Last modified: November 1, 2021</p>
 
 </div>
 
