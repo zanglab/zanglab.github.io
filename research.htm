@@ -71,6 +71,27 @@ ul.topnav li.icon {display: none;}
     display: table;
     clear: both;
 }
+
+.collapsible {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+}
+
+.collapsible:hover {
+  background-color: #fff;
+}
+
+.content {
+  padding: 0 3px;
+  display: none;
+  overflow: hidden;
+}
 </style>
 <title>Chongzhi Zang Lab</title>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -160,10 +181,12 @@ Data-driven discovery has become a new paradigm of biological research. By model
 <hr>
 <h3><font color="#002F6C">Collaborations</font></h3>
 <p style="line-height: 1.6;">Computational biology is an interdisciplinary science. It cannot thrive without close collaboration between researchers with different backgrounds and expertises. We always commit to collaborations and team science with experimental biologists, clinicians, as well as statisticians, computer scientists, mathematicians, and physicists. We study functional epigenetics and transcriptional regulation in a variety of biological systems and human diseases, including T-cell immunity, malignant peripheral nerve sheath tumor (MPNST), acute myeloid leukemia (AML), T-cell acute lymphoblastic leukemia (T-ALL), colorectal cancer, coronary artery disease, development, physical activity (with <a href="https://www.motrpac.org/" target="_blank">MoTrPAC</a>), and environmental health, etc.</p>
-<p style="line-height: 1.6;">Our collaborators include:
+<button type="button" class="collapsible">
+<p style="line-height: 1.6;">Our collaborators include (click to expand)
 </p>
+</button>
+<div class="content">
 <ul style="list-style-type:disc; padding-left: 24px; line-height: 1.6;"><p>
-<li><a href="https://med.virginia.edu/faculty/faculty-listing/gc8r/" target="_blank"><font color="#002F6C">Graham Casey</font></a>, Center for Public Health Genomics, University of Virginia</li>
 <li><a href="https://med.nyu.edu/faculty/suresh-cuddapah" target="_blank"><font color="#002F6C">Suresh Cuddapah</font></a>, Department of Environmental Medicine, New York University</li>
 <li><a href="https://dutta-labwebsite.github.io/" target="_blank"><font color="#002F6C">Anindya Dutta</font></a>, Department of Genetics, University of Alabama at Birmingham</li>
 <li><a href="https://med.virginia.edu/faculty/faculty-listing/fg5q/" target="_blank"><font color="#002F6C">Francine Garrett-Bakelman</font></a>, Department of Biochemistry and Molecular Genetics, University of Virginia</li>
@@ -174,6 +197,7 @@ Data-driven discovery has become a new paradigm of biological research. By model
 <li><a href="http://millerlab.org/" target="_blank"><font color="#002F6C">Clint L. Miller</font></a>, Center for Public Health Genomics, University of Virginia</li>
 <li><a href="https://med.virginia.edu/faculty/faculty-listing/gm7sj/" target="_blank"><font color="#002F6C">Golam Mohi</font></a>, Department of Biochemistry and Molecular Genetics, University of Virginia</li>
 <li><a href="https://med.virginia.edu/faculty/faculty-listing/ar7jq/" target="_blank"><font color="#002F6C">Aakrosh Ratan</font></a>, Center for Public Health Genomics, University of Virginia</li>
+<li><a href="https://med.virginia.edu/faculty/faculty-listing/jss5y/" target="_blank"><font color="#002F6C">Jeffrey S. Smith</font></a>, Department of Biochemistry and Molecular Genetics, University of Virginia</li>
 <li><a href="https://campuspress.yale.edu/wanglab/" target="_blank"><font color="#002F6C">Siyuan Steven Wang</font></a>, Department of Genetics, Yale University</li>
 <li><a href="https://med.virginia.edu/yuh-hwa-wang-lab/" target="_blank"><font color="#002F6C">Yuh-Hwa Wang</font></a>, Department of Biochemistry and Molecular Genetics, University of Virginia</li>
 <li><a href="https://hmh-cdi.org/our-team/xue-lab/" target="_blank"><font color="#002F6C">Hai-Hui Xue</font></a>, Center for Discovery and Innovation, Hackensack University Medical Center</li>
@@ -182,6 +206,7 @@ Data-driven discovery has become a new paradigm of biological research. By model
 <li><a href="https://www.stat.pitt.edu/people/tingting-zhang" target="_blank"><font color="#002F6C">Tingting Zhang</font></a>, Department of Statistics, University of Pittsburgh</li>
 <li><a href="https://zhulab.wordpress.com/" target="_blank"><font color="#002F6C">Yuan Zhu</font></a>, Children's Research Institute, Children’s National Medical Center</li>
 </p></ul>
+</div>
 <hr>
 <h3><font color="#002F6C">Funding Support</font></h3>
 <div class="row">
@@ -218,8 +243,24 @@ Data-driven discovery has become a new paradigm of biological research. By model
 </div>
 </div>
 <hr>
-<p align="right">Last modified: November 1, 2021</p>
+<p align="right">Last modified: February 21, 2022</p>
 
 </div>
 
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 </body></html>
