@@ -76,6 +76,28 @@ ul.topnav li.icon {display: none;}
     display: table;
     clear: both;
 }
+
+.collapsible {
+  background-color: #fff;
+  color: #002F6C;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+}
+
+.collapsible:hover {
+  background-color: #fff;
+}
+
+.content {
+  padding: 0 12px;
+  display: none;
+  overflow: hidden;
+}
+
 </style>
 <title>Chongzhi Zang Lab</title>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -128,9 +150,9 @@ function myFunction() {
 </div>
 
 <h3><font color="#002F6C">Welcome</font></h3>
-<p style="line-height: 1.6;">Welcome to the Zang Lab for Computational Biology at the <a href="http://www.virginia.edu" target="_blank">University of Virginia</a>. We are located in the Medical Center's <a href="http://www.virginia.edu/webmap/popPages/130-westcomplex.html" target="_blank">West Complex</a> (6th Floor), as a part of the <a href="https://med.virginia.edu/cphg/" target="_blank">Center for Public Health Genomics</a>.
+<p style="line-height: 1.6;">Welcome to the Zang Lab for Computational Biology and Functional Genomics at the <a href="http://www.virginia.edu" target="_blank">University of Virginia</a>. We are located in the Medical Center's <a href="http://www.virginia.edu/webmap/popPages/130-westcomplex.html" target="_blank">West Complex</a> (6th Floor), as a part of the <a href="https://med.virginia.edu/cphg/" target="_blank">Center for Public Health Genomics</a>. We are also affiliated with the Departments of <a href="https://med.virginia.edu/phs/" target="_blank">Public Health Sciences</a>, <a href="https://engineering.virginia.edu/departments/biomedical-engineering" target="_blank">Biomedical Engineering</a>, <a href="https://bmg.med.virginia.edu/" target="_blank">Biochemistry and Molecular Genetics</a>, and the <a href="https://uvahealth.com/services/cancer-research/research-programs" target="_blank">UVA Comprehensive Cancer Center</a>.
 </p>
-<p style="line-height: 1.6;">The Zang lab is recruiting motivated students and scholars to work on various topics in computational biology in a collaborative research team. Postdocs, graduate and undergraduate students are all welcome. Please visit <a href="position.htm">Positions</a> page for details.<br>
+<p style="line-height: 1.6;">We are recruiting motivated students and scholars to work on various topics in computational and functional genomics in a collaborative research team. Postdocs, graduate and undergraduate students are all welcome. Please visit the <a href="position.htm">Positions</a> page for details.<br>
 </p>
 <br>
 <p align="center">
@@ -304,7 +326,6 @@ function myFunction() {
 		Congratulations to the Class of 2021! Zack will start his PhD studies at the University of Southern California; Xinyue will pursue a master in biostatistics at Yale; Alex will work at a biomedical technology startup in Charlottesville; and Sophie will be a postbac IRTA research fellow at NIH! Best wishes to all!
 		<br><br>
 		News release about Zhenjia, Zack, and Wenjing's recent BART papers can be found at <a href="https://news.virginia.edu/content/uva-develops-new-tools-battle-cancer-advance-genomics-research" target="_blank"><b>UVA Today</b></a>.
-		<!--The press release about Zhenjia, Zack, and Wenjing's recent BART papers can be found at <a href="https://newsroom.uvahealth.com/2021/05/24/uva-develops-new-tools-to-battle-cancer-advance-genomics-research/" target="_blank">UVAhealth Newsroom</a>.-->
 		<br><br>
 		Zhenjia, Shawn, Zack, and Billy present posters at <a href="https://www.nhlbi.nih.gov/events/2021/2021-nhlbi-systems-biology-symposium" target="_blank">the 2021 NHLBI Systems Biology Symposium</a>.
 		<br><br>
@@ -490,6 +511,10 @@ function myFunction() {
 		</p>
 	</div>
 </div>
+<button type="button" class="collapsible">
+<h4><font color="#002F6C">Earlier News (Click to Expand)</font></h4>
+</button>
+<div class="content">
 <div class="row" style="line-height: 1.6;">
 	<div class="column left">
 		<p>
@@ -823,6 +848,7 @@ Yayi Feng, UVA second-year student, joins the lab as a research volunteer. Welco
 		<p>Dr. Zhenjia Wang joins the lab as Postdoctoral Research Associate. Welcome Zhenjia!</p>
 	</div>
 </div>
+</div>
 <br>
 <hr>
 <p style="width: 500px; margin: auto; line-height: 1.6;" align="center">
@@ -830,7 +856,7 @@ Yayi Feng, UVA second-year student, joins the lab as a research volunteer. Welco
 &mdash;Thomas Jefferson, 1799</i><br><br>
 </p>
 <hr>
-<p align="right">Last modified: July 27, 2022</p>
+<p align="right">Last modified: August 15, 2022</p>
 </div>
 <!-- Start of StatCounter Code for Wix - HTML5 Version -->
 <script type="text/javascript">
@@ -846,5 +872,22 @@ scJsHost+
 //]]>
 </script>
 <!-- End of StatCounter Code for Wix - HTML5 Version -->
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 
 </body></html>
